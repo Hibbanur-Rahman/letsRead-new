@@ -1,0 +1,12 @@
+@import url(./font.scss);
+body{
+    font-family: 'jost';
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+}
+.input-group:focus-within {
+    background-color: #7E57C2;
+    border-color: #7E57C2 !important;
+  }
