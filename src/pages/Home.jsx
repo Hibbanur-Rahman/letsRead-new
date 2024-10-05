@@ -41,9 +41,9 @@ const Home = () => {
 
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="w-full flex flex-col justify-center m-0 p-0 ">
       <HeroSection />
