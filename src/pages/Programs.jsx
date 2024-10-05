@@ -20,21 +20,21 @@ const Programs = () => {
         <img
           src={FaqBanner}
           alt="products-photo"
-          className="w-screen h-[479px] object-cover object-center overflow-hidden"
+          className="w-screen md:h-[479px] h-[300px] object-cover object-center overflow-hidden"
         />
         <div className="absolute bg-white flex items-center justify-center px-16 py-3">
-          <h5 className="text-3xl font-bold text-center">Our Programs</h5>
+          <h5 className="md:text-3xl text-2xl font-bold text-center">Our Programs</h5>
         </div>
       </div>
-      <div className="w-8/12 rounded-3xl py-6 px-6 flex items-center flex-col justify-center relative top-[-50px] bg-darkPurple shadow-lg">
-        <p className="text-xl text-white ">
+      <div className="md:w-8/12 w-11/12 rounded-3xl py-6 md:px-6 px-3 flex items-center flex-col justify-center relative top-[-50px] bg-darkPurple shadow-lg">
+        <p className="md:text-xl text-white ">
           Fostering a lifelong passion for reading in young minds through our
           comprehensive Foundation Program.
         </p>
       </div>
-      <div className="w-full bg-[#FFF7CE] bg-cover relative flex items-center justify-center">
-        <img src={programBgDesign} alt="" className="w-full " />
-        <div className="w-10/12 flex justify-center flex-wrap absolute">
+      <div className="w-full md:mb-0 mb-8 bg-[#FFF7CE] bg-cover relative flex items-center justify-center">
+        <img src={programBgDesign} alt="" className="w-full md:flex hidden" />
+        <div className="md:w-10/12 flex md:flex-row flex-col justify-center flex-wrap md:absolute">
           <PhoenicCard image={programImg1} programName="Level 0 Phonics Kit"/>
           <PhoenicCard image={programImg2} programName="Level 1 Phonics Kit"/>
           <PhoenicCard image={programImg3} programName="Level 2 Phonics Mastery Kit"/>

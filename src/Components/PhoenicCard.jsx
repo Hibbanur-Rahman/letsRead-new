@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const PhoenicCard = ({ image, programName }) => {
   return (
-    <div className="w-4/12 p-4">
+    <div className="md:w-4/12 w-full p-4">
       <div className="  bg-pink rounded-3xl overflow-hidden pb-4 hover:border-[2px] hover:border-darkPurple hover:box-border">
         <img src={image} alt="" className="w-full h-[300px] rounded-xl" />
         <NavLink

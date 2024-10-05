@@ -6,9 +6,9 @@ import aboutBannerImg from "../assets/images/about-banner.svg";
 import { useEffect } from "react";
 
 const About = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="w-full flex flex-col items-center md:mt-0 mt-[20px]">
       <div className="w-full flex items-center justify-center flex-col relative">
@@ -83,7 +83,7 @@ const About = () => {
           </div>
         </div>
 
-        <p className="mt-6 w-full md:text-lg text-sm text-gray font-medium">
+        <p className="mt-6 md:w-11/12 w-full md:text-lg text-sm text-gray font-medium">
           Let's Read takes young learners on an exciting journey from beginner
           to proficient readers through engaging games and playful activities.
           Our books and games are designed to boost confidence and self-esteem,
@@ -173,7 +173,7 @@ const About = () => {
         </h1>
         <img src={childPhoto3} alt="logo" className="" />
         <div className="md:w-6/12 w-11/12">
-          <h1 className="text-3xl md:flex hidden text-end font-bold  underline text-darkPurple">
+          <h1 className="text-3xl md:block hidden text-end font-bold  underline text-darkPurple">
             Equity in Education
           </h1>
           {/* <div className="w-[230px] h-[2px] bg-black "></div> */}

@@ -26,33 +26,33 @@ const Products = () => {
         <img
           src={productBanner}
           alt="products-photo"
-          className="w-screen h-[479px] object-cover object-center overflow-hidden"
+          className="w-screen md:h-[479px] h-[300px] object-cover object-center overflow-hidden"
         />
         <div className="absolute bg-white flex items-center justify-center px-10 py-3">
-            <h5 className="text-3xl font-bold text-center">Products</h5>
+            <h5 className="md:text-3xl text-xl font-bold text-center">Products</h5>
         </div>
       </div>
       <div
-        className="w-8/12 rounded-3xl py-4 px-6 flex items-center justify-center relative top-[-50px] shadow-lg"
+        className="md:w-8/12 w-11/12 rounded-3xl py-4 md:px-6 px-3 flex items-center justify-center relative top-[-50px] shadow-lg"
         style={{
           background:
             "linear-gradient(60deg, rgba(236,0,140,1) 0%, rgba(255,126,126,1) 100%)",
         }}
       >
-        <p className=" w-full text-2xl   text-white">
+        <p className=" w-full md:text-2xl text-base   text-white">
           Explore our wide range of products designed to meet your needs. Find
           the perfect solution for you with just a few clicks.
         </p>
       </div>
 
-      <div className="mt-24 w-full flex flex-col items-center justify-center">
+      <div className="md:mt-24 md:mb-0 mb-8 w-full flex flex-col items-center justify-center">
         <div className="flex gap-[40px] font-bold w-10/12">
           <Link to="#" className="text-pink underline text-3xl">
             All
           </Link>
           <Link to="#" className="text-3xl">Books</Link>
         </div>
-        <div className="flex justify-center align-center gap-[15px] w-10/12 mt-10 relative">
+        <div className="flex md:flex-row flex-col justify-center align-center gap-[15px] md:w-10/12 mt-10 relative">
           <div className="absolute right-[-130px] top-[-100px] rotate-180 -z-10">
             <img src={productSideDesign} alt="" className="w-full h-full" />
           </div>
