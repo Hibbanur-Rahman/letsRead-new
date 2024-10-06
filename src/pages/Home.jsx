@@ -56,8 +56,7 @@ const Home = () => {
       {/**========= Why do =============== */}
       <div className="w-full flex flex-col items-center justify-center mt-16">
         <p className="md:text-3xl text-xl text-center font-semibold md:mb-10">
-          Why do school owners, teachers,
-          <br /> parents, and children love Kreedo?
+          Why Choose Us?
         </p>
         <div className="w-full bg-[#FFFDD9] flex flex-col items-center justify-center mt-16">
           <div className="w-10/12 md:flex hidden gap-[15px]   justify-between my-16">
