@@ -17,25 +17,26 @@ const Programs = () => {
   const programData = [
     {
       img: programImg1,
-      levelHead: "Level 0 Phonic Kit",
-      desc: "Introduce your child to the world of phonics with our Level 0 Phonics Kit. Packed with engaging activities, it&apos;s the perfect start to their reading journey.",
+      levelHead: "Level 0 Beginners Kit",
+      desc: "Packed with engaging activities, It is the perfect start to their Reading journey.",
     },
     {
       img: programImg2,
-      levelHead: "Level 1 Phonic Kit",
-      desc: "Empower LKG learners with Level 1 Phonics Kit. Explore engaging activities to excel in phonics and literacy effortlessly.",
+      levelHead: "Level 1 Fluency Kit",
+      desc: "Empower Beginner with Level 1 Phonics Kit. Explore engaging CVC  to build and read through Play..",
     },
     {
       img: programImg3,
-      levelHead: "Level 2 Phonic Mastery Kit",
-      desc: "Elevate Phonics Proficiency: Let's Read Level 2! Master blends, digraphs, and more with engaging activities.",
+      levelHead: "Level 2 Proficiency Kit",
+      desc: "Elevate Phonics Proficiency: Master blends, Digraphs and Magic. Build Reading with Comprehension.",
     },
     {
       img: programImg4,
-      levelHead: "Level 3 Adv. Phonic Kit",
-      desc: "Elevate Reading Confidence: Let's Read Level 3! Master advanced phonics and boost reading fluency.",
+      levelHead: "Level 3 Mastery Kit",
+      desc: "Elevate Reading Confidence: Master advanced phonics and tricky Spelling Rules. Develop fluency and speed in Reading Stories..",
     },
   ];
+
   return (
     <div className="flex justify-center items-center w-full md:mt-0 mt-4">
       <div className="relative w-auto">
@@ -51,7 +52,7 @@ const Programs = () => {
           />
         </div>
         <p className="md:mt-12 mt-3 text-center font-semibold text-xl md:text-4xl">
-          Your Ally for Early Academic Success
+          Your Ally for Academic Success
         </p>
         <div
           className="flex justify-center items-center w-full pt-8 mt-8 bg-cover"

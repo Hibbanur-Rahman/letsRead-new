@@ -35,10 +35,11 @@ const Programs = () => {
       <div className="w-full md:mb-0 mb-8 bg-[#FFF7CE] bg-cover relative flex items-center justify-center">
         <img src={programBgDesign} alt="" className="w-full md:flex hidden" />
         <div className="md:w-10/12 flex md:flex-row flex-col justify-center flex-wrap md:absolute">
-          <PhoenicCard image={programImg1} programName="Level 0 Phonics Kit"/>
-          <PhoenicCard image={programImg2} programName="Level 1 Phonics Kit"/>
-          <PhoenicCard image={programImg3} programName="Level 2 Phonics Mastery Kit"/>
-          <PhoenicCard image={programImg4} programName="Level 3 Adv. Phonics Kit"/>
+          <PhoenicCard image={programImg1} programName="Level 0 Beginners"/>
+          <PhoenicCard image={programImg2} programName="Level 1 Fluency Readers"/>
+          <PhoenicCard image={programImg3} programName="Level 2 Proficiency Readers"/>
+          <PhoenicCard image={programImg4} programName="Level 3 Mastery  Readers"/>
+          <PhoenicCard image={programImg4} programName="Online Reading Classes"/>
         </div>
 
         <div className="absolute right-[-30px] bottom-[70px] h-[200px] w-[200px] -z-11">

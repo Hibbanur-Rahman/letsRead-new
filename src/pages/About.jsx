@@ -25,9 +25,8 @@ const About = () => {
           }}
         >
           <p className=" md:w-9/12 w-full md:text-2xl text-base   text-white">
-            In this digital age when children are inclined towards screens, our
-            program gives the option of socializing and learning to read through
-            play.
+          In this digital age when children are inclined towards screens, our program gives the option of socializing and learning
+          to read through play.
           </p>
           <button
             className="md:mt-0 mt-2 md:px-8 md:w-auto w-full py-1 md:mr-10 rounded-xl font-bold md:text-2xl text-base"
@@ -36,7 +35,7 @@ const About = () => {
                 "linear-gradient(60deg, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%)",
             }}
           >
-            About Us
+            Program
           </button>
         </div>
       </div>
@@ -53,18 +52,14 @@ const About = () => {
 
         <div className="md:pt-20 md:ps-8 pe-0 md:w-6/12 ">
           <h3 className="md:text-2xl text-lg md:w-11/12 font-bold  ">
-            In this digital age when children are inclined towards screens, our
-            program gives the option of socializing and learning to read through
-            play.
+          In this digital age when children are inclined towards screens, our program gives the option of socializing and learning 
+          to read through play.
           </h3>
           <p className="pt-4 md:w-11/12 md:text-xl text-sm text-gray">
-            Let&apos;s Read takes young learners on an exciting journey from
-            beginner to proficient readers through engaging games and playful
-            activities. Our books and games are designed to boost confidence and
-            self-esteem, fostering a love for reading from an early age. The
-            hands-on nature of our program encourages physical movement,
-            communication, and collaboration, providing a unique learning
-            experience that goes beyond screens.
+            Let&apos;s Read takes young learners on an exciting journey from beginner to proficient readers through engaging games
+            and playful activities. Our books and games are designed to boost confidence and self-esteem, fostering a love for reading
+            from an early age. The hands-on nature of our program encourages physical movement, communication, and collaboration, 
+            providing a unique learning experience that goes beyond screens.
           </p>
           {/* <button className="bg-darkPurple px-8 py-2  rounded-lg font-bold mt-6 text-white">
             read more
@@ -76,7 +71,7 @@ const About = () => {
         <div className="w-auto border-l-4 border-r-4 flex flex-col border-darkPurple">
           <div className="w-1/2 border-t-4 border-darkPurple"></div>
           <h1 className="md:text-3xl text-xl font-bold text-center m-2">
-            Empowering Early Literacy
+            Empowering Learners
           </h1>
           <div className="w-full flex justify-end">
             <div className="w-1/2 border-t-4 border-darkPurple"></div>
@@ -84,13 +79,12 @@ const About = () => {
         </div>
 
         <p className="mt-6 md:w-11/12 w-full md:text-lg text-sm text-gray font-medium">
-          Let's Read takes young learners on an exciting journey from beginner
-          to proficient readers through engaging games and playful activities.
-          Our books and games are designed to boost confidence and self-esteem,
-          fostering a love for reading from an early age. The hands-on nature of
-          our program encourages physical movement, communication, and
-          collaboration, providing a unique learning experience that goes beyond
-          screens.
+        Let's Read is designed to empower children who learn English as a second language. We begin with activities that support 
+        listening and speaking before we teach reading. The playful nature of the reading material allows children to make mistakes 
+        without feeling guilty. It helps them to make personal choices, fosters independence and allows them to repeat activities over 
+        and over again till they are mastered. Our structured and progressive approach nurtures confidence, self worth and self esteem 
+        in every child. As your child grows and becomes confident, the program provides just the right amount of cognitive stimulation 
+        and enhances higher order thinking ability.
         </p>
       </div>
       <div className="flex md:mt-12 mt-2 justify-between w-11/12">
@@ -138,32 +132,32 @@ const About = () => {
         </h1>
         <ul className="md:mt-5 mt-3">
           <li className=" py-1 md:text-lg text-base text-gray  ">
-            Holistic Approach: Seamlessly integrates play-based reading,
-            interactive experiences, and captivating learning materials to
-            accommodate diverse learning preferences.
+            <b>Holistic Approach</b>: Seamlessly integrates play-based reading, interactive experiences, and captivating learning 
+            materials to accommodate diverse learning preferences.
           </li>
           <li className=" py-1 md:text-lg text-base text-gray ">
-            Play Phonics: Develops expertise in letter-sound relationships,
-            decoding, and word construction through an engaging kinesthetic
-            phonics curriculum.
+            <b>Play Phonics</b>: Develops expertise in letter-sound relationships, decoding, and word construction through an engaging 
+            kinesthetic phonics curriculum.
           </li>
           <li className=" py-1 md:text-lg text-base text-gray  ">
-            Cognitive Stimulation: Activities and games foster higher-order
+            <b>Cognitive Stimulation</b>: Activities and games foster higher-order
             thinking skills, ensuring steady progress in reading proficiency.
           </li>
           <li className=" py-1 md:text-lg text-base text-gray  ">
-            Preschool Literacy Audit: Assists schools in implementing effective
-            literacy strategies to boost literacy rates.
+            <b>Preschool Literacy Audit</b>: Assists schools in implementing effective foundational literacy strategies to boost literacy
+            rates.Ensures smooth transitions in reading books in higher classes.
           </li>
           <li className=" py-1 md:text-lg text-base text-gray  ">
-            Reading Age Tool: Tracks each child's reading age, enabling schools
-            to monitor and improve literacy standards over time.
+            <b>Reading Age Tool</b>: Tracks each child's reading age, enabling schools to monitor and improve literacy standards over 
+            time.
           </li>
           <li className=" py-1 md:text-lg text-base text-gray  ">
-            Parental Engagement: Equips parents with resources and guidance to
-            actively participate in their child’s literacy journey. Educator’s
-            Companion: Provides pre-primary teachers with comprehensive support
-            for classroom differentiation and targeted intervention.
+            <b>Parental Engagement</b>: Equips parents with resources and guidance to actively participate in their child’s literacy 
+            journey. Educator’s
+          </li>
+          <li className=" py-1 md:text-lg text-base text-gray  ">
+            <b>Companion</b>: Provides pre-primary teachers with comprehensive support for classroom differentiation and targeted 
+            intervention.
           </li>
         </ul>
       </div>
@@ -189,11 +183,10 @@ const About = () => {
             Learning Through Fun and Friendship
           </h1>
           <p className=" text-gray  md:text-end pt-8 md:text-lg md:mb-0 mb-8">
-            Research shows that children are naturally drawn to reading when
-            books reflect their lives and culture. Let's Read celebrates the joy
-            of reading by offering stories and characters that resonate with
-            young readers, fostering a lifelong love for learning and
-            friendship.
+          Research shows that children are naturally drawn towards play. Our activities are carefully curated so that they progress 
+          towards different stages of play. We move from solitary play ( where activity is done individually by the child) towards 
+          collaborative play (where a group of children play a game). These activities make reading and learning fun and enjoyable, 
+          thus reducing the stress of making mistakes and the boredom of reading from textbooks.
           </p>
         </div>
       </div>

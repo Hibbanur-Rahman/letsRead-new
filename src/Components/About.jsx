@@ -33,16 +33,13 @@ const About = () => {
             play.
           </h3>
           <p className="pt-4 w-11/12 md:text-xl text-sm">
-            Let&apos;s Read takes young learners on an exciting journey from
-            beginner to proficient readers through engaging games and playful
-            activities. Our books and games are designed to boost confidence and
-            self-esteem, fostering a love for reading from an early age. The
-            hands-on nature of our program encourages physical movement,
-            communication, and collaboration, providing a unique learning
-            experience that goes beyond screens.
+            Let&apos;s Read takes Second language Learners on an exciting journey from Beginning to Mastery of the English
+            language. Our <b>Engaging</b> books and <b>Exciting</b> games are designed to boost
+            confidence and self-esteem, fostering a love for reading from an early age. The hands-on nature of our program encourages
+            physical movement, communication, and collaboration, providing a unique learning experience that goes beyond screens.
           </p>
           <button className="bg-darkPurple px-8 py-2 md:text-base text-sm rounded-lg font-bold mt-6 text-white">
-            read more
+            Read More
           </button>
         </div>
       </div>

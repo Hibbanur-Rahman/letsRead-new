@@ -29,11 +29,11 @@ const Footer = () => {
       >
         <div className="md:w-2/12 w-full px-5">
           <img src={logo} alt="img" className="w-full h-[90px] p-0 m-0" />
-          <p className="text-white md:mb-6 mt-4 md:mt-6">
+          {/* <p className="text-white md:mb-6 mt-4 md:mt-6">
             Enroll Your Child in a Session now!
-          </p>
+          </p> */}
           <p className="text-white md:mb-6 mb-3 md:text-xl">
-            Let&apos;s Read: Empowering young minds through literacy.
+            Let&apos;s Read: Empowering young minds through Literacy.
           </p>
           <div className=" flex gap-1">
             <div className="bg-black shadow-xl rounded-full p-3 m-0 flex items-center justify-center">
@@ -55,15 +55,17 @@ const Footer = () => {
         </div>
         <div className="md:w-4/12 w-full gap-[30px] flex justify-between">
           <div className=" w-6/12 ">
-            <h1 className="md:text-3xl text-lg font-bold  ">Products</h1>
+            <h1 className="md:text-3xl text-lg font-bold  ">Let's Read Books</h1>
             <div className="md:w-[100px] w-[50px] h-[3px] rounded-lg mt-1 bg-yellow"></div>
             <ul className=" list-disc md:mt-16 mt-4 md:ps-0 ps-4">
               <li className=" md:text-lg text-sm my-2">
                 Let&apos;s Read Educator&apos;s Handbook
               </li>
-              <li className=" md:text-lg text-sm my-2">Learner's Guide 1</li>
-              <li className=" md:text-lg text-sm my-2">Learner's Book 2</li>
-              <li className=" md:text-lg text-sm my-2">Learner's Guide 3</li>
+              <li className=" md:text-lg text-sm my-2">Nursery School Reader & workbook</li>
+              <li className=" md:text-lg text-sm my-2">Jr. Kg School Reader & workbook</li>
+              <li className=" md:text-lg text-sm my-2">Sr. Kg School Reader & workbook</li>
+              <li className=" md:text-lg text-sm my-2">Grade 1 School Reader & workbook</li>
+              <li className=" md:text-lg text-sm my-2">Let’s Read Board Game</li>
             </ul>
           </div>
           <div className=" w-6/12 ">
@@ -71,10 +73,10 @@ const Footer = () => {
             <div className="md:w-[100px] w-[50px] h-[3px] rounded-lg mt-1 bg-yellow"></div>
 
             <ul className=" list-disc md:mt-16 mt-4">
-              <li className="md:text-lg text-sm my-2">Level 0 Phoenic Kit </li>
-              <li className="md:text-lg text-sm my-2">Level 1 Phoenic Kit </li>
-              <li className="md:text-lg text-sm my-2 ">Level 2 Phoenic Mastery Kit </li>
-              <li className="md:text-lg text-sm my-2">Level 2 Advance Phoenic Kit </li>
+              <li className="md:text-lg text-sm my-2">Level 0 Beginners Kit </li>
+              <li className="md:text-lg text-sm my-2">Level 1 Fluency Kit </li>
+              <li className="md:text-lg text-sm my-2 ">Level 2 Proficiency Kit </li>
+              <li className="md:text-lg text-sm my-2">Level 3 Mastery Kit </li>
             </ul>
           </div>
         </div>

@@ -17,7 +17,7 @@ const Objectives = () =>{
                    Story Cards: Facilitating a smooth transition from the familiar contours of their mother tongue to the enchanting vistas of English.
                    </li>
                    <li>
-                   Sound Recognition: Sharpening young ears to discern the nuances of phonetic elements.
+                   Sound Recognition: Sharpening young ears to discern the nuances of Phonetic elements.
                    </li>
                    <li>
                    Identification and Memory: Strengthening cognitive abilities through active recognition and recall.

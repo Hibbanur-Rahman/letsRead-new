@@ -28,11 +28,10 @@ const HeroSection = () => {
           The Joy of <span className="text-yellow ">Reading</span>
         </h1>
         <p className="text-white md:text-lg text-sm md:w-7/12 mt-5">
-          Reading kits offer families with young children the tools and
-          information to help inspire a. passion for reading in their homes.
+        Kinesthetic Reading kits offer young childrens the Tools and means to Ignite a Passion for Lifelong Learning.
         </p>
         <p className="text-white md:text-2xl text-sm md:w-7/12 mt-5">
-          555+ Schools &gt;&gt; 500+ Teachers &gt;&gt; 5000+ Childrens{" "}
+          100+ Schools &gt;&gt; 10000+ Teachers &gt;&gt; 50000+ Students{" "}
         </p>
         <button
           onClick={toggleModalOpen}

@@ -16,6 +16,7 @@ const FAQ = () => {
   const [isFaqShow4, setIsFaqShow4] = useState(false);
   const [isFaqShow5, setIsFaqShow5] = useState(false);
   const [isFaqShow6, setIsFaqShow6] = useState(false);
+  const [isFaqShow7, setIsFaqShow7] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -40,7 +41,7 @@ const FAQ = () => {
           FAQ{" "}
         </h1>
         <p className="text-center md:text-xl text-lg text-gray ">
-          Get Answers to Your Common Queries.How does Learn.
+          Get Answers to Some Common Queries.
         </p>
       </div>
 
@@ -59,164 +60,164 @@ const FAQ = () => {
           <div className="md:w-7/12 w-full md:px-0 px-3 md:mb-0 mb-8">
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow1
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow1
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow1(!isFaqShow1)}
               >
                 <p className="text-xl">
-                  1. How does Let&apos;s Read teach reading skills?
+                  1. How does Let&apos;s Read Teach Reading Skills?
                 </p>
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow1 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow1 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="text-xl">
                   {" "}
-                  Let&apos;s Read adopts a holistic method, integrating engaging
-                  materials and interactive activities for a comprehensive
-                  learning experience.
+                  Let&apos;s Read Adopts a Holistic method, using the Hands-on play materials, school books and Educator’s Guide for a comprehensive
+                  Learning Experience.
                 </p>
               </div>
             </div>
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow2
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow2
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow2(!isFaqShow2)}
               >
                 <p className="text-xl">
-                  2. How Can I track my child&apos;s progress with Let&apos;s
+                  2. How Can I track my child&apos;s Progress with Let&apos;s
                   Read?
                 </p>
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow2 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow2 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="text-xl">
                   {" "}
-                  Let&apos;s Read adopts a holistic method, integrating engaging
-                  materials and interactive activities for a comprehensive
-                  learning experience.
+                  Progress in reading can be tracked using our Diagnostic Tool. A two-minute test gives us the Reading Age for the child..
                 </p>
               </div>
             </div>
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow3
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow3
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow3(!isFaqShow3)}
               >
                 <p className="text-xl">
-                  3. Is Let&apos;s Read suitable for children of all ages?
+                  3. Is Let&apos;s Read Suitable for Childrens of all ages?
                 </p>
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow3 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow3 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="text-xl">
                   {" "}
-                  Let&apos;s Read adopts a holistic method, integrating engaging
-                  materials and interactive activities for a comprehensive
-                  learning experience.
+                  Let&apos;s read is most suitable for early years (3 to 7 years). However, It can be used for older Childrens as a Crash course.(7 to 12 years)
                 </p>
               </div>
             </div>
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow4
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow4
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow4(!isFaqShow4)}
               >
                 <p className="text-xl">
-                  4. How Can I get started with Let&apos;s Read at home?
+                  4. How Can I use Let&apos;s Read for my Child at Home?
                 </p>
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow4 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow4 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="text-xl">
                   {" "}
-                  Let&apos;s Read adopts a holistic method, integrating engaging
-                  materials and interactive activities for a comprehensive
-                  learning experience.
+                  If you are a Parent, you can use the Educator’s guide to practice Reading at Home. You can Purchase Let’s read Board Games & Activities to make Learning interesting.
                 </p>
               </div>
             </div>
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow5
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow5
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow5(!isFaqShow5)}
               >
                 <p className="text-xl">
-                  15 HAre there any teacher training resources available?
+                  5. Are there any Teacher Training resources available?
                 </p>
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow5 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow5 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="text-xl">
                   {" "}
-                  Let&apos;s Read adopts a holistic method, integrating engaging
-                  materials and interactive activities for a comprehensive
-                  learning experience.
+                  Yes, Let’s Read Provides a Training module for School and a workshop for individual Teachers. You can find the details on our Home page.
                 </p>
               </div>
             </div>
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow6
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow6
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow6(!isFaqShow6)}
               >
                 <p className="text-xl">
-                  6.Is Let&apos;s Read suitable for non-English setting?
+                  6.Is Let&apos;s Read suitable for Non-Native Speakers/Second-Language Learners ?
                 </p>
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow6 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow6 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="text-xl">
                   {" "}
-                  Let&apos;s Read adopts a holistic method, integrating engaging
-                  materials and interactive activities for a comprehensive
-                  learning experience.
+                  Yes, Let’s Read has been designed for Second Language Learners.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item w-full my-4">
+              <div
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow7
+                    ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
+                    : "rounded-xl"
+                  }`}
+                onClick={() => setIsFaqShow7(!isFaqShow7)}
+              >
+                <p className="text-xl">
+                  7.Can I take a franchise and start my own Let’s Read center ?
+                </p>
+                <i className="bi bi-chevron-down text-2xl font-bold"></i>
+              </div>
+              <div
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow7 ? "flex" : "hidden"
+                  }`}
+              >
+                <p className="text-xl">
+                  {" "}
+                  Yes, You can take a franchise and start your own Let’s Read center. Please Contact us via Email for details.
                 </p>
               </div>
             </div>

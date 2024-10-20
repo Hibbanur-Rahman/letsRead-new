@@ -21,8 +21,8 @@ const Product = () => {
   const productData = [
     {
       img: productImg1,
-      heading: "Let's Read Educator's Handbook",
-      desc: "Our Let's Read Educator's Handbook is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!",
+      heading: "LR Educators Handbook",
+      desc: "Let’s Read Educators Handbook is your one stop guide to teaching phonics effectively. It includes a Curriculum plan and a rubric to check Learning outcomes.",
       icon: productCardIcon1,
     },
     {
@@ -59,8 +59,8 @@ const Product = () => {
         <div className="relative top-[-10px]  h-[3px] md:w-[300px] w-[180px] bg-pink"></div>
       </div>
       <p className="mx-auto text-center md:text-xl text-base   md:font-regular font-semibold mt-8 md:w-6/12 w-11/12">
-        Explore our wide range of products designed to meet your needs. Find the
-        perfect solution for you with just a few clicks.
+        Explore our wide range of Products Designed to meet your needs. Select the
+        perfect solution for yourself with just a few clicks.
       </p>
 
       <div className="md:flex hidden justify-center align-center gap-[15px] w-10/12 mt-10 relative">

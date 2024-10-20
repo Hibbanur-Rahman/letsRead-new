@@ -21,9 +21,9 @@ const Achievement = () => {
         </div>
 
         <div className="flex md:flex-row md:overflow-x-hidden overflow-x-scroll md:w-9/12 w-full  items-center md:justify-center mt-10">
-          <AchievementCard number="1%" icon={AchievementCardIcon1} desc="Successfull Trainings"/>
-          <AchievementCard number="1" icon={AchievementCardIcon2} desc="Dedicated Team Members"/>
-          <AchievementCard number="1000" icon={AchievementCardIcon3} desc="People Reached"/>
+          <AchievementCard number="100+" icon={AchievementCardIcon1} desc="Schools"/>
+          <AchievementCard number="10000+" icon={AchievementCardIcon2} desc="Teachers"/>
+          <AchievementCard number="50000+" icon={AchievementCardIcon3} desc="Students"/>
         </div>
     </div>
   )

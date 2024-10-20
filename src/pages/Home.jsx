@@ -38,6 +38,7 @@ const Home = () => {
   const [isFaqShow4, setIsFaqShow4] = useState(false);
   const [isFaqShow5, setIsFaqShow5] = useState(false);
   const [isFaqShow6, setIsFaqShow6] = useState(false);
+  const [isFaqShow7, setIsFaqShow7] = useState(false);
 
   const navigate = useNavigate();
 
@@ -56,18 +57,18 @@ const Home = () => {
       {/**========= Why do =============== */}
       <div className="w-full flex flex-col items-center justify-center mt-16">
         <p className="md:text-3xl text-xl text-center font-semibold md:mb-10">
-          Why Choose Us?
+          Who is Let’s Read for?
         </p>
         <div className="w-full bg-[#FFFDD9] flex flex-col items-center justify-center mt-16">
           <div className="w-10/12 md:flex hidden gap-[15px]   justify-between my-16">
             <div className="w-3/12 bg-white flex flex-col items-center p-5 rounded-sm shadow-lg">
-              <h5 className="font-bold text-2xl">For the Child:</h5>
-              <img src={whyDoCardImg1} alt="" className="h-[180px] mt-3 mb-3" />
+              <h5 className="font-bold text-2xl">For the Parent & Child:</h5>
+              <img src={whyDoCardImg4} alt="" className="h-[180px] mt-3 mb-3" />
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Becomes a fearless, collaborative, and engaged learner
+                &gt;&gt; Help your child to become a fearless, confident and motivated Reader.
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Gains independent and confidence
+                &gt;&gt; Stress free and Playful Learning.
               </p>
             </div>
             <div className="w-3/12 bg-white flex flex-col items-center p-5 rounded-sm shadow-lg">
@@ -77,33 +78,36 @@ const Home = () => {
                 &gt;&gt; Boosts admissions
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Enhances learning outcomes
+                &gt;&gt; Guarantee Academic Success and Better Results
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Strengthens the school&apos;s brand
+                &gt;&gt; Strengthens the School&apos;s Brand
               </p>
             </div>
             <div className="w-3/12 bg-white flex flex-col items-center p-5 rounded-sm shadow-lg">
               <h5 className="font-bold text-2xl">For Teachers:</h5>
               <img src={whyDoCardImg3} alt="" className="h-[180px] mt-3 mb-3" />
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Reduces workload with play-based learning
+                &gt;&gt; Reduces Workload with play-based Learning
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Offers comprehensive training
+                &gt;&gt; Enables Differentiation (Applicable for all Age group)
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Provides ongoing mentoring and support
+                &gt;&gt; Easy to follow, step by step content Provided.
               </p>
             </div>
             <div className="w-3/12 bg-white flex flex-col items-center p-5 rounded-sm shadow-lg">
-              <h5 className="font-bold text-2xl">For Parents:</h5>
-              <img src={whyDoCardImg4} alt="" className="h-[180px] mt-3 mb-3" />
+              <h5 className="font-bold text-2xl">For Ambitious Entrepreneurs:</h5>
+              <img src={whyDoCardImg1} alt="" className="h-[180px] mt-3 mb-3" />
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Improves children&apos;s literacy and numeracy skills
+                &gt;&gt; Affordable Startup Opportunity.
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Reduces the need for extra tuition or interventions
+                &gt;&gt; Personal and Professional Growth.
+              </p>
+              <p className="text-[#455A64] w-full">
+                &gt;&gt; Financial Independence.
               </p>
             </div>
           </div>
@@ -130,11 +134,10 @@ const Home = () => {
                 {new Array(length).fill("").map((_, i) => (
                   <span
                     key={i}
-                    className={`block h-2 cursor-pointer rounded-2xl transition-all content-[''] ${
-                      activeIndex === i
+                    className={`block h-2 cursor-pointer rounded-2xl transition-all content-[''] ${activeIndex === i
                         ? "w-8 bg-[#FE2260]"
                         : "w-4 bg-[rgba(254,34,96,0.5)]"
-                    }`}
+                      }`}
                     onClick={() => setActiveIndex(i)}
                   />
                 ))}
@@ -352,11 +355,10 @@ const Home = () => {
               {new Array(length).fill("").map((_, i) => (
                 <span
                   key={i}
-                  className={`block h-2 cursor-pointer rounded-2xl transition-all content-[''] ${
-                    activeIndex === i
+                  className={`block h-2 cursor-pointer rounded-2xl transition-all content-[''] ${activeIndex === i
                       ? "w-8 bg-[#FE2260]"
                       : "w-4 bg-[rgba(254,34,96,0.5)]"
-                  }`}
+                    }`}
                   onClick={() => setActiveIndex(i)}
                 />
               ))}
@@ -478,7 +480,7 @@ const Home = () => {
         </div>
 
         <p className="md:text-xl text-base text-center md:px-0 px-6">
-          Get Answers to Your Common Queries. How does Learn
+          Get Answers to Some Common Queries.
         </p>
         <div className="w-11/12 flex justify-between relative md:mt-16">
           <div className="absolute left-[-70px] top-[-70px] h-[200px] w-[200px] -z-10">
@@ -494,11 +496,10 @@ const Home = () => {
           <div className="md:w-7/12">
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow1
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow1
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow1(!isFaqShow1)}
               >
                 <p className="md:text-xl text-base md:font-regular font-semibold">
@@ -507,9 +508,8 @@ const Home = () => {
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow1 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow1 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="md:text-xl text-base">
                   {" "}
@@ -521,11 +521,10 @@ const Home = () => {
             </div>
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow2
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow2
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow2(!isFaqShow2)}
               >
                 <p className="md:text-xl text-base md:font-regular font-semibold">
@@ -535,9 +534,8 @@ const Home = () => {
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow2 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow2 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="md:text-xl text-base">
                   {" "}
@@ -549,11 +547,10 @@ const Home = () => {
             </div>
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow3
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow3
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow3(!isFaqShow3)}
               >
                 <p className="md:text-xl text-base md:font-regular font-semibold">
@@ -562,9 +559,8 @@ const Home = () => {
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow3 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow3 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="md:text-xl text-base">
                   {" "}
@@ -576,11 +572,10 @@ const Home = () => {
             </div>
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow4
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow4
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow4(!isFaqShow4)}
               >
                 <p className="md:text-xl text-base md:font-regular font-semibold">
@@ -589,9 +584,8 @@ const Home = () => {
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow4 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow4 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="md:text-xl text-base">
                   {" "}
@@ -603,22 +597,20 @@ const Home = () => {
             </div>
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow5
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow5
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow5(!isFaqShow5)}
               >
                 <p className="md:text-xl text-base md:font-regular font-semibold">
-                15 Are there any teacher training resources available?
+                  5. Are there any teacher training resources available?
                 </p>
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow5 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow5 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="md:text-xl text-base">
                   {" "}
@@ -630,28 +622,49 @@ const Home = () => {
             </div>
             <div className="faq-item w-full my-4">
               <div
-                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${
-                  isFaqShow6
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow6
                     ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
                     : "rounded-xl"
-                }`}
+                  }`}
                 onClick={() => setIsFaqShow6(!isFaqShow6)}
               >
                 <p className="md:text-xl text-base md:font-regular font-semibold">
-                6.Is Let&apos;s Read suitable for non-English setting?
+                  6.Is Let&apos;s Read suitable for non-English setting?
                 </p>
                 <i className="bi bi-chevron-down text-2xl font-bold"></i>
               </div>
               <div
-                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${
-                  isFaqShow6 ? "flex" : "hidden"
-                }`}
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow6 ? "flex" : "hidden"
+                  }`}
               >
                 <p className="md:text-xl text-base">
                   {" "}
                   Let&apos;s Read adopts a holistic method, integrating engaging
                   materials and interactive activities for a comprehensive
                   learning experience.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item w-full my-4">
+              <div
+                className={`faq-question shadow-xl transition-all p-4 cursor-pointer  border-[1px] border-[#969696] flex items-center justify-between ${isFaqShow7
+                    ? "rounded-3xl rounded-tr-none rounded-bl-none bg-darkPurple text-white font-bold"
+                    : "rounded-xl"
+                  }`}
+                onClick={() => setIsFaqShow7(!isFaqShow7)}
+              >
+                <p className="md:text-xl text-base md:font-regular font-semibold">
+                  7.Can I take a franchise and start my own Let’s Read center ?
+                </p>
+                <i className="bi bi-chevron-down text-2xl font-bold"></i>
+              </div>
+              <div
+                className={`faq-answer  items-center p-2 border-[1px] rounded-lg  mt-3 shadow-lg ${isFaqShow7 ? "flex" : "hidden"
+                  }`}
+              >
+                <p className="text-xl">
+                  {" "}
+                  Yes, You can take a franchise and start your own Let’s Read center. Please Contact us via Email for details.
                 </p>
               </div>
             </div>
@@ -674,7 +687,7 @@ const Home = () => {
         />
         <div className="w-auto flex flex-col items-start  justify-center p-8">
           <h2 className="md:text-2xl text-base font-bold text-white">
-            Tell us About Your Programs,
+            Tell us About Your Problems,
             <br /> We are Ready to Solve
           </h2>
 

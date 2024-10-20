@@ -13,9 +13,9 @@ const LetsRead = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center mt-32 relative">
       <h1 className="text-center md:text-3xl text-2xl md:px-0 px-3 font-semiBold text-black">
-        The{" "}
+        {" "}
         <span className="text-darkPurple underline font-bold">LETS READ</span>{" "}
-        helps your child develope
+        Helps Your Child Develope
       </h1>
       <div className="absolute md:flex hidden top-[-20px] left-[-50px] h-[150px] w-[150px]">
         <img src={yellowStar} alt="star" className="h-full w-full" />
@@ -32,23 +32,23 @@ const LetsRead = () => {
         <div className="flex w-full items-center md:justify-center absolute md:overflow-x-hidden overflow-x-scroll">
           <div className="md:w-2/12 w-6/12  md:px-0 px-3 flex-shrink-0 flex flex-col items-center justify-center">
             <img src={letsReadIcon1} alt="" className="" />
-            <p className="text-xl font-bold mt-3">Linguistic Skills</p>
+            <p className="text-xl font-bold mt-3">Literacy Skills</p>
           </div>
           <div className="md:w-2/12 w-6/12  md:px-0 px-3 flex-shrink-0 flex flex-col items-center justify-center">
             <img src={letsReadIcon2} alt="" className="" />
-            <p className="text-xl font-bold mt-3">Linguistic Skills</p>
+            <p className="text-xl font-bold mt-3">Confidence</p>
           </div>
           <div className="md:w-2/12 w-6/12  md:px-0 px-3 flex-shrink-0 flex flex-col items-center justify-center">
             <img src={letsReadIcon3} alt="" className="" />
-            <p className="text-xl font-bold mt-3">Linguistic Skills</p>
+            <p className="text-xl font-bold mt-3">Communication Skills</p>
           </div>
           <div className="md:w-2/12 w-6/12  md:px-0 px-3 flex-shrink-0 flex flex-col items-center justify-center">
             <img src={letsReadIcon4} alt="" className="" />
-            <p className="text-xl font-bold mt-3">Linguistic Skills</p>
+            <p className="text-xl font-bold mt-3">Social Skills</p>
           </div>
           <div className="md:w-2/12 w-6/12  md:px-0 px-3 flex-shrink-0 flex flex-col items-center justify-center">
             <img src={letsReadIcon5} alt="" className="" />
-            <p className="text-xl font-bold mt-3">Linguistic Skills</p>
+            <p className="text-xl font-bold mt-3">Creativity & Imagination</p>
           </div>
         </div>
         <div className="absolute md:flex hidden bottom-[-70px] right-[-70px] h-[150px] w-[150px]">
