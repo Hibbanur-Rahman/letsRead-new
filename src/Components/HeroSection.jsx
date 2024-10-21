@@ -1,20 +1,22 @@
 import React from "react";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import HeroPng from "../assets/images/letsread.png";
 import HeroImgMobile from "../assets/images/hero-img-mobile.png";
 // import Enquire from "../pages/Enquire";
 import EnquirePng from "../assets/images/Enquire.png";
-
 import { Dialog } from "@material-tailwind/react";
-
 import { RxCross2 } from "react-icons/rx";
+import { toggleModal } from "../redux/modalSlice";
+import { openEnquireModal } from "../redux/enquireModalSlice";
+
 const HeroSection = () => {
-  const [modalOpen, setModalOpen] = useState(false);
+  const dispatch = useDispatch();
+  const enquireModalOpen = useSelector((state) => state.enquireModal?.open);
 
-  const toggleModalOpen = () => {
-    setModalOpen(!modalOpen);
+  const handleModal = () => {
+    dispatch(openEnquireModal(true));
   };
-
   return (
     <div className="w-full flex justify-center items-center flex-col relative md:mt-0 mt-[60px]">
       <img src={HeroPng} alt="img" className="w-full md:flex hidden" />
@@ -28,27 +30,28 @@ const HeroSection = () => {
           The Joy of <span className="text-yellow ">Reading</span>
         </h1>
         <p className="text-white md:text-lg text-sm md:w-7/12 mt-5">
-        Kinesthetic reading kits offer young children the tools and means to Ignite a passion for lifelong learning.
+          Kinesthetic reading kits offer young children the tools and means to
+          ignite a passion for lifelong learning.
         </p>
         <p className="text-white md:text-2xl text-sm md:w-7/12 mt-5">
           100+ Schools &gt;&gt; 10000+ Teachers &gt;&gt; 50000+ Students{" "}
         </p>
         <button
-          onClick={toggleModalOpen}
+          onClick={() => dispatch(openEnquireModal(true))}
           className="bg-yellow px-4 py-2 mt-4  rounded-lg font-bold"
         >
           Enquire Now
         </button>
       </div>
       <Dialog
-        open={modalOpen}
-        handler={toggleModalOpen}
+        open={enquireModalOpen}
+        handler={handleModal}
         className="flex justify-center overflow-scroll content-center absolute rounded-2xl w-full h-full "
       >
         <div className="w-full flex flex-col items-center md:h-[880px] h-max md:pb-0 pb-4  bg-white relative  rounded-2xl overflow-hidden shadow-2xl">
           <button
             className="absolute  right-2 top-1 bg-white rounded-full shadow-xl"
-            onClick={() => setModalOpen(!modalOpen)}
+            onClick={() => dispatch(openEnquireModal(false))}
           >
             <RxCross2 className="text-3xl text-pink font-bold" />
           </button>

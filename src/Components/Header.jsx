@@ -19,8 +19,12 @@ import { MdLibraryAddCheck } from "react-icons/md";
 import { HiOutlineSquaresPlus } from "react-icons/hi2";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import { FaEnvelope } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { openEnquireModal } from "../redux/enquireModalSlice";
 
 const Header = () => {
+  const dispatch=useDispatch();
+
   const location = useLocation();
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
@@ -34,7 +38,8 @@ const Header = () => {
         <img
           src={LetsReadImg}
           alt="img"
-          className="md:w-[200px] md:h-[50px] w-[100px] h-[30px]"
+          className="md:w-[200px] md:h-[50px] w-[100px] h-[30px] cursor-pointer"
+          onClick={()=>navigate('/')}
         />
         <nav className=" md:flex hidden gap-6 items-center">
           <NavLink
@@ -91,6 +96,9 @@ const Header = () => {
               background:
                 "linear-gradient(60deg, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%)",
             }}
+            onClick={()=>{
+              navigate('/')
+              dispatch(openEnquireModal(true))}}
           >
             Enquire Now
           </button>
@@ -100,7 +108,7 @@ const Header = () => {
             <BiSolidUserDetail className="text-3xl  text-yellow" />
           </div>
           <div className="rounded-full cursor-pointer shadow-md flex justify-center items-center bg-[#7E57C2] p-1 px-2">
-            <FiPhoneCall className="text-2xl  text-white" />
+            <FiPhoneCall className="text-2xl  text-white" onClick={()=>dispatch(openEnquireModal(true))} />
           </div>
           <div
             className="rounded-full cursor-pointer shadow-md flex justify-center items-center bg-pink p-1  px-2"

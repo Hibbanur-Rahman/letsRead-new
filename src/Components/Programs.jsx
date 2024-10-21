@@ -12,8 +12,10 @@ import { GrFormNext } from "react-icons/gr";
 import { GrFormPrevious } from "react-icons/gr";
 
 import { Carousel } from "@material-tailwind/react";
+import { useNavigate } from "react-router-dom";
 
 const Programs = () => {
+  const navigate=useNavigate();
   const programData = [
     {
       img: programImg1,
@@ -120,7 +122,7 @@ const Programs = () => {
             </div>
 
             <div className="box-design h-[170px] w-[170px] bg-[rgba(255,234,127,255)] rounded-3xl rotate-45 right-[-50%] top-[-100px] relative -z-10"></div>
-            <button className="relative md:top-[-100px] md:mt-0 mt-[-150px] top-[-90px] bg-darkPurple text-white font-bold text-lg px-6 py-1 rounded-lg">
+            <button className="relative md:top-[-100px] md:mt-0 mt-[-150px] top-[-90px] bg-darkPurple text-white font-bold text-lg px-6 py-1 rounded-lg" onClick={()=>navigate('/programs')}>
               Explore Our Program
             </button>
           </div>
