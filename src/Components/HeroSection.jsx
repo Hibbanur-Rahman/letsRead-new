@@ -28,7 +28,7 @@ const HeroSection = () => {
           The Joy of <span className="text-yellow ">Reading</span>
         </h1>
         <p className="text-white md:text-lg text-sm md:w-7/12 mt-5">
-        Kinesthetic Reading kits offer young childrens the Tools and means to Ignite a Passion for Lifelong Learning.
+        Kinesthetic reading kits offer young children the tools and means to Ignite a passion for lifelong learning.
         </p>
         <p className="text-white md:text-2xl text-sm md:w-7/12 mt-5">
           100+ Schools &gt;&gt; 10000+ Teachers &gt;&gt; 50000+ Students{" "}
