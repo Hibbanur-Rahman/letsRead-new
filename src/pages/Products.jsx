@@ -16,9 +16,108 @@ import productCardIcon4 from "../assets/images/product-card-icon-4.svg";
 import productSideDesign from "../assets/images/products-side-bottom-design.svg";
 
 const Products = () => {
-  useEffect(()=>{
+  const productDetails = [
+    {
+      id: 1,
+      image: productImg1,
+      heading: "Let's Read Educator's Handbook",
+      description:
+        "Our Let's Read Educator's Handbook is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!",
+      icon: productCardIcon1,
+    },
+    {
+      id: 2,
+      image: productImg2,
+      heading: "Learner's Guide 1",
+      description:
+        "Our Let's Read Learner's Guide 1 is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!",
+      icon: productCardIcon2,
+    },
+    {
+      id: 3,
+      image: productImg3,
+      heading:
+        "Learner's Book 2: A Vibrant Journey into Phonics Sounds for Young Minds",
+      description:
+        "Learner's book 2 provides invaluable guidance in teaching phonics skills to young learners.",
+      icon: productCardIcon3,
+    },
+    {
+      id: 4,
+      image: productImg4,
+      heading: "Learner's Guide 3",
+      description: "Discover Phonics Mastery with Learner's Guide Book 3",
+      icon: productCardIcon4,
+    },
+    {
+      id: 5,
+      image: productImg1,
+      heading: "Let’s Read Kits",
+      description:
+        "Let's Read kits are fun, engaging hands-on activities and games that support reading at every level. Purchase these exciting activities to make reading stress free.",
+      icon: productCardIcon1,
+    },
+    {
+      id: 6,
+      image: productImg2,
+      heading: "Let’s Read School Books",
+      description:
+        "The Let's Read school books are written for Nursery, Junior KG, Senior KG and Class1 . It’s suitable for teachers, parents and learners of respective age groups.",
+      icon: productCardIcon2,
+    },
+    {
+      id: 7,
+      image: productImg3,
+      heading: "Let’s Read Nursery Reader and Workbook",
+      description:
+        "Let's Read kits are fun, engaging hands-on activities and games that support reading at every level. Purchase these exciting activities to make reading stress free.",
+      icon: productCardIcon3,
+    },
+    {
+      id: 8,
+      image: productImg2,
+      heading: "Let’s Read School Books",
+      description:
+        "The Let's Read school books are written for Nursery, Junior KG, Senior KG and Class1 . It’s suitable for teachers, parents and learners of respective age groups.",
+      icon: productCardIcon4,
+    },
+    {
+      id: 9,
+      image: productImg1,
+      heading: "Let’s Read Nursery Reader and Workbook",
+      description:
+        "The Let's Read Nursery Reader is especially designed to teach spoken English to second language learners. The book focuses on developing listening and speaking skills and ensures smooth transition from mother to English.",
+      icon: productCardIcon1,
+    },
+    {
+      id: 10,
+      image: productImg2,
+      heading: "Let’s Read Jr. KG Reader and Workbook",
+      description:
+        "The Let's Read Jr. KG Reader is especially designed to practise reading CVC words and sentences with confidence and speed. The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.",
+      icon: productCardIcon2,
+    },
+    {
+      id: 11,
+      image: productImg3,
+      heading: "Let’s Read Sr. KG Reader and Workbook",
+      description:
+        "The Let's Read Sr. KG Reader is especially designed to practise words with blends, digraphs, double consonants, compound words, and magic-e, sentences and stories.The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.",
+      icon: productCardIcon3,
+    },
+    {
+      id: 12,
+      image: productImg2,
+      heading: "Let’s Read Class 1 Reader and Workbook",
+      description:
+        "The Let's Read Class 1 Reader is especially designed to practise long vowel A,E,I,O, U families, complex, tricky phonograms, learn spelling rules, read sentences and long paragraphs fluently. The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.",
+      icon: productCardIcon4,
+    },
+  ];
+
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[])
+  }, []);
 
   return (
     <div className="w-full flex flex-col items-center relative">
@@ -29,7 +128,9 @@ const Products = () => {
           className="w-screen md:h-[479px] h-[300px] object-cover object-center overflow-hidden"
         />
         <div className="absolute bg-white flex items-center justify-center px-10 py-3">
-            <h5 className="md:text-3xl text-xl font-bold text-center">Products</h5>
+          <h5 className="md:text-3xl text-xl font-bold text-center">
+            Products
+          </h5>
         </div>
       </div>
       <div
@@ -50,37 +151,26 @@ const Products = () => {
           <Link to="#" className="text-pink underline text-3xl">
             All
           </Link>
-          <Link to="#" className="text-3xl">Books</Link>
+          <Link to="#" className="text-3xl">
+            Books
+          </Link>
         </div>
-        <div className="flex md:flex-row flex-col justify-center align-center gap-[15px] md:w-10/12 mt-10 relative">
+        <div className="flex md:flex-row flex-wrap flex-col justify-center align-center gap-y-[20px] md:w-10/12 mt-10 relative">
           <div className="absolute right-[-130px] top-[-100px] rotate-180 -z-10">
             <img src={productSideDesign} alt="" className="w-full h-full" />
           </div>
-          <ProductCard
-            image={productImg1}
-            heading="Let's Read Educator's Handbook"
-            desc="Our Let's Read Educator's Handbook is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!"
-            icon={productCardIcon1}
-
-          />
-          <ProductCard
-            image={productImg2}
-            heading="Learner&apos;s Guide 1"
-            desc="Our Let's Read Learner's Guide 1 is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!"
-            icon={productCardIcon2}
-          />
-          <ProductCard
-            image={productImg3}
-            heading="Learner&apos;s Book 2: A Vibrant Journey into Phonics Sounds for Young Minds"
-            desc="Learner&apos;s book 2 provides invaluable guidance in teaching phonics skills to young learners."
-            icon={productCardIcon3}
-          />
-          <ProductCard
-            image={productImg4}
-            heading="Learner's Guide 3"
-            desc="Discover Phonics Mastery with Learner's Guide Book 3"
-            icon={productCardIcon4}
-          />
+          {Array.isArray(productDetails) &&
+            productDetails?.length > 0 &&
+            productDetails.map((item) => (
+              <ProductCard
+                key={item.id}
+                image={item.image}
+                heading={item.heading}
+                desc={item.description}
+                icon={item.icon}
+                item={item}
+              />
+            ))}
         </div>
         <div className="absolute left-[-30px] bottom-[-70px] h-[200px] w-[200px] -z-10">
           <img src={productSideDesign} alt="" className="w-full h-full" />

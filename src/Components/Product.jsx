@@ -20,18 +20,21 @@ import { GrFormPrevious } from "react-icons/gr";
 const Product = () => {
   const productData = [
     {
+      id:1,
       img: productImg1,
       heading: "LR Educators Handbook",
       desc: "Let’s Read Educators Handbook is your one stop guide to teaching phonics effectively. It includes a Curriculum plan and a rubric to check Learning outcomes.",
       icon: productCardIcon1,
     },
     {
+      id:2,
       img: productImg2,
       heading: "Learner’s Guide 1",
       desc: "Our Let's Read Learner's Guide 1 is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!",
       icon: productCardIcon2,
     },
     {
+      id:3,
       img: productImg3,
       heading:
         "Learner’s Book 2: A Vibrant Journey into Phonics Sounds for Young Minds",
@@ -39,6 +42,7 @@ const Product = () => {
       icon: productCardIcon3,
     },
     {
+      id:4,
       img: productImg4,
       heading: "Learner's Guide 3",
       desc: "Discover Phonics Mastery with Learner's Guide Book 3",
@@ -75,6 +79,7 @@ const Product = () => {
               heading={item.heading}
               desc={item.desc}
               icon={productCardIcon1}
+              item={item}
             />
           ))}
       </div>
@@ -117,13 +122,14 @@ const Product = () => {
           )}
         >
           {productData &&
-            productData.map((item, index) => (
+            productData.map((item) => (
               <ProductCard
-                key={index}
+                key={item.id}
                 image={item.img}
                 heading={item.heading}
                 desc={item.desc}
                 icon={productCardIcon1}
+                item={item}
               />
             ))}
         </Carousel>

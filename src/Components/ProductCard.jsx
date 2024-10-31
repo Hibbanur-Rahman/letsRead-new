@@ -1,10 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const ProductCard = ({ image, heading, desc, icon }) => {
+const ProductCard = ({ image, heading, desc, icon, item }) => {
   const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/productView", {
+      state: {
+        item: item,
+      },
+    });
+  };
   return (
-    <div className="md:w-3/12 flex md:px-0 px-8">
+    <div className="md:w-3/12 flex md:px-2 px-8">
       <div className=" w-full flex flex-col  rounded-xl overflow-hidden border-[1px] border-black m-0 p-0 relative bg-[#551F64]">
         <img
           src={image}
@@ -26,7 +33,7 @@ const ProductCard = ({ image, heading, desc, icon }) => {
           <div className="w-full flex flex-col justify-center align-baseline">
             <button
               className="bg-yellow px-8 py-2 mr-10 rounded-lg font-bold mt-3 ml-12"
-              onClick={() => navigate("/productView")}
+              onClick={() => handleNavigate()}
             >
               Shop Now
             </button>

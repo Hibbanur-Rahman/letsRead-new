@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import ProductViewBanner from "../assets/images/product-view-banner.jpg";
 
 import plusIcon from "../assets/images/plus-icon.svg";
@@ -28,10 +28,12 @@ const OrderDetail = () => {
   const [count, setCount] = useState(1);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const navigate = useNavigate();
+  const location = useLocation();
   const [isAboutShow, setIsAboutShow] = useState(true);
   const [isAccountShow, setIsAccountShow] = useState(false);
   const [isShippingShow, setIsShippingShow] = useState(false);
   const [isPayShow, setIsPayShow] = useState(false);
+  const [productDetail, setProductDetail] = useState({});
 
   const handleView = (i) => {
     if (i === 1) {
@@ -57,9 +59,13 @@ const OrderDetail = () => {
     }
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[])
+    setProductDetail(location?.state?.item);
+    if (!location?.state?.item) {
+      navigate("/products");
+    }
+  }, []);
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <div className="banner w-full flex items-center justify-center">
@@ -133,7 +139,7 @@ const OrderDetail = () => {
         <div className="plan-view w-full flex  gap-[10px] justify-center">
           <div className="w-6/12 rounded-3xl p-8 border-[1px] border-[gray] flex flex-col">
             <h5 className="text-3xl font-bold underline">
-              Learner&apos;s Guide 1
+              {productDetail?.heading}
             </h5>
             <div className="flex items-center mt-4 gap-[20px]">
               <div className="rounded-lg flex bg-darkPurple w-fit py-1 px-4  items-center gap-[5px]">
@@ -142,11 +148,7 @@ const OrderDetail = () => {
               </div>
               <p className="text-gray text-lg">5,136 Ratings & 461 Reviews</p>
             </div>
-            <p className="text-xl font-bold mt-4">
-              Our Let's Read Learner's Guide 1 is your ultimate guide to
-              teaching phonics skills effectively. Thank you for choosing Let's
-              Read!
-            </p>
+            <p className="text-xl font-bold mt-4">{productDetail?.heading}</p>
             <h1 className="mt-8 font-bold text-darkPurple text-4xl">
               ₹ {count * 250}.00
             </h1>
@@ -297,7 +299,10 @@ const OrderDetail = () => {
             </div>
           </div>
         </div>
-        <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10" onClick={() => handleView(2)}>
+        <button
+          className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10"
+          onClick={() => handleView(2)}
+        >
           Next
         </button>
       </div>
@@ -344,10 +349,16 @@ const OrderDetail = () => {
             </div>
           </div>
           <div className="w-5/12 flex items-center justify-between mt-8">
-            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10" onClick={() => handleView(1)}>
+            <button
+              className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10"
+              onClick={() => handleView(1)}
+            >
               Back
             </button>
-            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10" onClick={() => handleView(3)}>
+            <button
+              className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10"
+              onClick={() => handleView(3)}
+            >
               Next
             </button>
           </div>
@@ -439,10 +450,16 @@ const OrderDetail = () => {
             </div>
           </div>
           <div className="w-5/12 flex items-center justify-between mt-8">
-            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10" onClick={() => handleView(2)}>
+            <button
+              className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10"
+              onClick={() => handleView(2)}
+            >
               Back
             </button>
-            <button className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10" onClick={() => handleView(4)}>
+            <button
+              className="bg-darkPurple text-xl text-white font-bold rounded-lg px-12 py-2 my-2 mt-10"
+              onClick={() => handleView(4)}
+            >
               Next
             </button>
           </div>

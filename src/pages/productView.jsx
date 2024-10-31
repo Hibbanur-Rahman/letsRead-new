@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import ProductViewBanner from "../assets/images/product-view-banner.jpg";
 import plusIcon from "../assets/images/plus-icon.svg";
 import minusIcon from "../assets/images/minus-icon.svg";
@@ -31,11 +31,22 @@ import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 const ProductView = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [count, setCount] = useState(1);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [productDetail, setProductDetail] = useState({});
+
+  //handle Navigate order
+  const handleNavigateOrder = () => {
+    navigate("/order", { state: { item: productDetail } });
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setProductDetail(location?.state?.item);
+    if (!location?.state?.item) {
+      navigate("/products");
+    }
   }, []);
 
   return (
@@ -48,7 +59,7 @@ const ProductView = () => {
         />
         <div className="absolute bg-white flex items-center justify-center px-10 py-3 md:rounded-0 rounded-3xl shadow-xl">
           <h5 className="md:text-3xl text-2xl  font-bold text-center underline">
-            Learner&apos;s Guide 1
+            {productDetail.heading}
           </h5>
         </div>
       </div>
@@ -56,7 +67,7 @@ const ProductView = () => {
       <div className="plan-view md:w-11/12 w-full md:px-0 px-3 flex md:flex-row flex-col-reverse  md:mt-20 mt-4 gap-[10px] justify-center">
         <div className="md:w-6/12 rounded-3xl md:p-8 p-3 border-[1px] border-[gray] flex flex-col md:shadow-none shadow-xl">
           <h5 className="md:text-3xl text-xl font-bold underline">
-            Learner&apos;s Guide 1
+            {productDetail.heading}
           </h5>
           <div className="flex items-center md:mt-4 mt-2 md:gap-[20px] gap-[10px]">
             <div className="rounded-lg flex  bg-darkPurple w-fit py-1 px-4  items-center md:gap-[5px] gap-[10px]">
@@ -66,8 +77,7 @@ const ProductView = () => {
             <p className="text-gray md:text-lg">5,136 Ratings & 461 Reviews</p>
           </div>
           <p className="md:text-xl font-bold md:mt-4 mt-2">
-            Our Let's Read Learner's Guide 1 is your ultimate guide to teaching
-            phonics skills effectively. Thank you for choosing Let's Read!
+            {productDetail.description}
           </p>
           <h1 className="md:mt-8 mt-4 font-bold text-darkPurple md:text-4xl text-2xl">
             ₹ {count * 250}.00
@@ -101,7 +111,7 @@ const ProductView = () => {
           </div>
           <button
             className="md:text-2xl text-xl text-white font-bold rounded-lg bg-pink py-2 md:mt-8 mt-4"
-            onClick={() => navigate("/order")}
+            onClick={() => handleNavigateOrder()}
           >
             Buy Now
           </button>
