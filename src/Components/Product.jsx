@@ -20,32 +20,35 @@ import { GrFormPrevious } from "react-icons/gr";
 const Product = () => {
   const productData = [
     {
-      id:1,
-      img: productImg1,
+      id: 1,
+      image: productImg1,
       heading: "LR Educators Handbook",
-      desc: "Let’s Read Educators Handbook is your one stop guide to teaching phonics effectively. It includes a Curriculum plan and a rubric to check Learning outcomes.",
+      description:
+        "Let’s Read Educators Handbook is your one stop guide to teaching phonics effectively. It includes a Curriculum plan and a rubric to check Learning outcomes.",
       icon: productCardIcon1,
     },
     {
-      id:2,
-      img: productImg2,
+      id: 2,
+      image: productImg2,
       heading: "Learner’s Guide 1",
-      desc: "Our Let's Read Learner's Guide 1 is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!",
+      description:
+        "Our Let's Read Learner's Guide 1 is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!",
       icon: productCardIcon2,
     },
     {
-      id:3,
-      img: productImg3,
+      id: 3,
+      image: productImg3,
       heading:
         "Learner’s Book 2: A Vibrant Journey into Phonics Sounds for Young Minds",
-      desc: "Learner’s book 2 provides invaluable guidance in teaching phonics skills to young learners.",
+      description:
+        "Learner’s book 2 provides invaluable guidance in teaching phonics skills to young learners.",
       icon: productCardIcon3,
     },
     {
-      id:4,
-      img: productImg4,
+      id: 4,
+      image: productImg4,
       heading: "Learner's Guide 3",
-      desc: "Discover Phonics Mastery with Learner's Guide Book 3",
+      description: "Discover Phonics Mastery with Learner's Guide Book 3",
       icon: productCardIcon4,
     },
   ];
@@ -63,8 +66,8 @@ const Product = () => {
         <div className="relative top-[-10px]  h-[3px] md:w-[300px] w-[180px] bg-pink"></div>
       </div>
       <p className="mx-auto text-center md:text-xl text-base   md:font-regular font-semibold mt-8 md:w-6/12 w-11/12">
-        Explore our wide range of Products Designed to meet your needs. Select the
-        perfect solution for yourself with just a few clicks.
+        Explore our wide range of Products Designed to meet your needs. Select
+        the perfect solution for yourself with just a few clicks.
       </p>
 
       <div className="md:flex hidden justify-center align-center gap-[15px] w-10/12 mt-10 relative">
@@ -75,9 +78,9 @@ const Product = () => {
           productData.map((item, index) => (
             <ProductCard
               key={index}
-              image={item.img}
+              image={item.image}
               heading={item.heading}
-              desc={item.desc}
+              desc={item.description}
               icon={productCardIcon1}
               item={item}
             />
@@ -125,9 +128,9 @@ const Product = () => {
             productData.map((item) => (
               <ProductCard
                 key={item.id}
-                image={item.img}
+                image={item.image}
                 heading={item.heading}
-                desc={item.desc}
+                desc={item.description}
                 icon={productCardIcon1}
                 item={item}
               />
