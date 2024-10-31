@@ -150,7 +150,7 @@ const OrderDetail = () => {
             </div>
             <p className="text-xl font-bold mt-4">{productDetail?.description}</p>
             <h1 className="mt-8 font-bold text-darkPurple text-4xl">
-              ₹ {count * 250}.00
+              ₹ {count * productDetail.amount}.00
             </h1>
             <div className="flex items-center mt-8">
               <div
@@ -474,7 +474,7 @@ const OrderDetail = () => {
           <div className="w-6/12 flex  flex-col items-center rounded-3xl border-[1px] border-[gray] p-4">
             <div className=" w-full flex justify-between items-center my-4">
               <p className="text-xl text-gray">Total Amount:</p>
-              <p className="text-3xl text-[#006930] font-bold">₹ 250.00</p>
+              <p className="text-3xl text-[#006930] font-bold">₹ {count*productDetail.amount}</p>
             </div>
             <div className=" w-full flex justify-between items-center my-4">
               <p className="text-xl text-gray">Apply Coupon Code:</p>

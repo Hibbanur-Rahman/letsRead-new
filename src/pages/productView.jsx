@@ -80,7 +80,7 @@ const ProductView = () => {
             {productDetail.description}
           </p>
           <h1 className="md:mt-8 mt-4 font-bold text-darkPurple md:text-4xl text-2xl">
-            ₹ {count * 250}.00
+            ₹ {count * productDetail.amount}.00
           </h1>
           <div className="flex items-center md:mt-8 mt-4">
             <div

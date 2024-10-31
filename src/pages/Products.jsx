@@ -24,6 +24,7 @@ const Products = () => {
       description:
         "Our Let's Read Educator's Handbook is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!",
       icon: productCardIcon1,
+      amount:600,
     },
     {
       id: 2,
@@ -32,6 +33,7 @@ const Products = () => {
       description:
         "Our Let's Read Learner's Guide 1 is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!",
       icon: productCardIcon2,
+      amount:350,
     },
     {
       id: 3,
@@ -41,6 +43,7 @@ const Products = () => {
       description:
         "Learner's book 2 provides invaluable guidance in teaching phonics skills to young learners.",
       icon: productCardIcon3,
+      amount:255,
     },
     {
       id: 4,
@@ -48,6 +51,7 @@ const Products = () => {
       heading: "Learner's Guide 3",
       description: "Discover Phonics Mastery with Learner's Guide Book 3",
       icon: productCardIcon4,
+      amount:250,
     },
     {
       id: 5,
@@ -56,6 +60,7 @@ const Products = () => {
       description:
         "Let's Read kits are fun, engaging hands-on activities and games that support reading at every level. Purchase these exciting activities to make reading stress free.",
       icon: productCardIcon1,
+      amount:8000,
     },
     {
       id: 6,
@@ -64,6 +69,7 @@ const Products = () => {
       description:
         "The Let's Read school books are written for Nursery, Junior KG, Senior KG and Class1 . It’s suitable for teachers, parents and learners of respective age groups.",
       icon: productCardIcon2,
+      amount:250,
     },
     {
       id: 7,
@@ -72,6 +78,7 @@ const Products = () => {
       description:
         "Let's Read kits are fun, engaging hands-on activities and games that support reading at every level. Purchase these exciting activities to make reading stress free.",
       icon: productCardIcon3,
+      amount: 300,
     },
     {
       id: 8,
@@ -80,6 +87,7 @@ const Products = () => {
       description:
         "The Let's Read school books are written for Nursery, Junior KG, Senior KG and Class1 . It’s suitable for teachers, parents and learners of respective age groups.",
       icon: productCardIcon4,
+      amount:180,
     },
     {
       id: 9,
@@ -88,6 +96,7 @@ const Products = () => {
       description:
         "The Let's Read Nursery Reader is especially designed to teach spoken English to second language learners. The book focuses on developing listening and speaking skills and ensures smooth transition from mother to English.",
       icon: productCardIcon1,
+      amount:250,
     },
     {
       id: 10,
@@ -96,6 +105,7 @@ const Products = () => {
       description:
         "The Let's Read Jr. KG Reader is especially designed to practise reading CVC words and sentences with confidence and speed. The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.",
       icon: productCardIcon2,
+      amount:250,
     },
     {
       id: 11,
@@ -104,6 +114,7 @@ const Products = () => {
       description:
         "The Let's Read Sr. KG Reader is especially designed to practise words with blends, digraphs, double consonants, compound words, and magic-e, sentences and stories.The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.",
       icon: productCardIcon3,
+      amount:250,
     },
     {
       id: 12,
@@ -112,6 +123,7 @@ const Products = () => {
       description:
         "The Let's Read Class 1 Reader is especially designed to practise long vowel A,E,I,O, U families, complex, tricky phonograms, learn spelling rules, read sentences and long paragraphs fluently. The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.",
       icon: productCardIcon4,
+      amount:250,
     },
   ];
 

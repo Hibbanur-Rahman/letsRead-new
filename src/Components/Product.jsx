@@ -26,6 +26,7 @@ const Product = () => {
       description:
         "Let’s Read Educators Handbook is your one stop guide to teaching phonics effectively. It includes a Curriculum plan and a rubric to check Learning outcomes.",
       icon: productCardIcon1,
+      amount:250,
     },
     {
       id: 2,
@@ -34,6 +35,7 @@ const Product = () => {
       description:
         "Our Let's Read Learner's Guide 1 is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!",
       icon: productCardIcon2,
+      amount:350,
     },
     {
       id: 3,
@@ -43,6 +45,7 @@ const Product = () => {
       description:
         "Learner’s book 2 provides invaluable guidance in teaching phonics skills to young learners.",
       icon: productCardIcon3,
+      amount:200,
     },
     {
       id: 4,
@@ -50,6 +53,7 @@ const Product = () => {
       heading: "Learner's Guide 3",
       description: "Discover Phonics Mastery with Learner's Guide Book 3",
       icon: productCardIcon4,
+      amount:600,
     },
   ];
   return (
