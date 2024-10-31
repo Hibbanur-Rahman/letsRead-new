@@ -148,7 +148,7 @@ const OrderDetail = () => {
               </div>
               <p className="text-gray text-lg">5,136 Ratings & 461 Reviews</p>
             </div>
-            <p className="text-xl font-bold mt-4">{productDetail?.heading}</p>
+            <p className="text-xl font-bold mt-4">{productDetail?.description}</p>
             <h1 className="mt-8 font-bold text-darkPurple text-4xl">
               ₹ {count * 250}.00
             </h1>
