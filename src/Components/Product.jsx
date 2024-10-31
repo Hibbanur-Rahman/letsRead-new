@@ -81,7 +81,7 @@ const Product = () => {
               image={item.image}
               heading={item.heading}
               desc={item.description}
-              icon={productCardIcon1}
+              icon={item.icon}
               item={item}
             />
           ))}
@@ -131,7 +131,7 @@ const Product = () => {
                 image={item.image}
                 heading={item.heading}
                 desc={item.description}
-                icon={productCardIcon1}
+                icon={item.icon}
                 item={item}
               />
             ))}
