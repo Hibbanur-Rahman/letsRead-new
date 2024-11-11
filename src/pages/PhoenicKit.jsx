@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import FaqBanner from "../assets/images/faq-banner.jpg";
 import ProgramItemDescImg1 from "../assets/images/program-item-desc-img-1.jpg";
@@ -30,6 +30,7 @@ import galleryImg17 from "../assets/images/program-gallery-img-17.jpg";
 
 const PhoenicKit = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [isDescriptionShow, setIsDescriptionShow] = useState(true);
   const [isObjectiveShow, setIsObjectiveShow] = useState(false);
   const [isBenefitShow, setIsBenefitShow] = useState(false);
@@ -104,7 +105,7 @@ const PhoenicKit = () => {
         />
         <div className="absolute bg-white flex items-center justify-center px-16 py-3 md:rounded-none rounded-2xl md:shadow-none shadow-2xl">
           <h5 className="md:text-3xl text-xl font-bold text-center">
-            Level 1 Phonics Kit
+           {location?.state?.levelHead}
           </h5>
         </div>
       </div>
@@ -116,9 +117,7 @@ const PhoenicKit = () => {
         }}
       >
         <p className="md:text-xl text-base text-white ">
-          Introduce your child to the world of phonics with our Level 0 Phonics
-          Kit. Packed with engaging activities, it's the perfect start to their
-          reading journey.
+         {location?.state?.desc}
         </p>
       </div>
 
@@ -574,7 +573,7 @@ const PhoenicKit = () => {
         {count > 1 ? (
           <button
             className="w-6/12 bg-darkPurple text-white rounded-lg py-1"
-            onClick={()=>handlePrev(count)}
+            onClick={() => handlePrev(count)}
           >
             Prev
           </button>
@@ -585,7 +584,7 @@ const PhoenicKit = () => {
         {count < 5 ? (
           <button
             className="w-6/12 bg-darkPurple text-white rounded-lg py-1"
-            onClick={()=>handleNext(count)}
+            onClick={() => handleNext(count)}
           >
             Next
           </button>

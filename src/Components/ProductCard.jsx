@@ -16,7 +16,7 @@ const ProductCard = ({ image, heading, desc, icon, item }) => {
         <img
           src={image}
           alt="frame"
-          className="object-cover object-bottom w-full "
+          className="object-cover object-bottom w-full h-[200px]"
         />
         <div className="w-full flex flex-col h-full justify-between bg-[#551F64] rounded-t-3xl relative top-[-20px] p-4 ">
           <div className="w-full">

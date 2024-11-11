@@ -13,6 +13,7 @@ import Contact from "./pages/contact";
 import ProductView from "./pages/productView";
 import OrderDetail from "./pages/orderDetail";
 import "./assets/styles/main.scss";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/order" element={<OrderDetail />} />
       </Routes>
       <Footer />
+      <Toaster  containerStyle={{zIndex: 99999}}/>
     </div>
   );
 };

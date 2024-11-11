@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ProgramCard = ({ image, levelHead, desc }) => {
   const navigate = useNavigate();
   const handleNavigation = () => {
-    navigate("/PhoenicKit", {
+    navigate("/phoenicKit", {
       state: { image: image, levelHead: levelHead, desc: desc },
     });
   };

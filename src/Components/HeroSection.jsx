@@ -9,11 +9,52 @@ import { Dialog } from "@material-tailwind/react";
 import { RxCross2 } from "react-icons/rx";
 import { toggleModal } from "../redux/modalSlice";
 import { openEnquireModal } from "../redux/enquireModalSlice";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 const HeroSection = () => {
   const dispatch = useDispatch();
   const enquireModalOpen = useSelector((state) => state.enquireModal?.open);
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [state, setState] = useState("");
+  const [childName, setChildName] = useState("");
+  const [loading, setLoading] = useState(false);
 
+  // handle the enquiry message
+  const handleEnquiryMessage = async (e) => {
+    setLoading(true);
+    e.preventDefault();
+    try {
+      const formData = new FormData();
+      formData.append("fullName", fullName);
+      formData.append("email", email);
+      formData.append("phone", phone);
+      formData.append("message", message);
+      formData.append("state", state);
+      formData.append("childName", childName);
+      const response = await axios.post(
+        "https://script.google.com/macros/s/AKfycbxvCGx2EbmivAJ5Wg7uUYDgVSz3OOyRwmFBZezcX_2jrKtluX9ZiJrYqNQcflFl2eKi0Q/exec",
+        formData
+      );
+      if (response.status === 200) {
+        setLoading(false);
+        toast.success("Your message has been sent successfully");
+        setChildName("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+        setState("");
+        setFullName("");
+      }
+    } catch (error) {
+      setLoading(false);
+      console.log("error in sending enquiry:", error);
+      toast.error(error?.response?.message?.data || "Failed to Send Message");
+    }
+  };
   const handleModal = () => {
     dispatch(openEnquireModal(true));
   };
@@ -70,41 +111,68 @@ const HeroSection = () => {
               24 hours.
             </p>
           </div>
-          <form className="w-full  md:px-0 px-3 flex flex-col gap-[14px] justify-center items-center md:mt-20 mt-4">
+          <form
+            className="w-full  md:px-0 px-3 flex flex-col gap-[14px] justify-center items-center md:mt-20 mt-4"
+            onSubmit={(e) => handleEnquiryMessage(e)}
+          >
             <input
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
               type="text"
-              placeholder="Saif"
+              placeholder="Enter your name"
               className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black "
             />
             <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               type="text"
-              placeholder="Enter Your Email:"
+              placeholder="Enter Your Email"
               className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black "
             />
             <input
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
               type="text"
-              placeholder="Enter Your Mobile Number:"
+              placeholder="Enter Your Mobile Number"
               className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black "
             />
             <input
+              value={state}
+              onChange={(e) => setState(e.target.value)}
               type="text"
-              placeholder="Select Your State:"
+              placeholder="Enter Your State"
               className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black "
             />
             <input
+              value={childName}
+              onChange={(e) => setChildName(e.target.value)}
               type="text"
-              placeholder="Enter Your Child Name:"
+              placeholder="Enter Your Child Name"
               className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black "
             />
             <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               id="message"
               rows="4"
               className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black  resize-none"
               placeholder="Enter Your Message"
             ></textarea>
-            <button className="bg-pink text-white md:w-8/12 w-full py-2 mt-4  rounded-2xl font-bold">
-              Enquire Now
-            </button>
+            {loading ? (
+              <button
+                className="bg-pink text-white md:w-8/12 w-full py-2 mt-4  rounded-2xl font-bold cursor-not-allowed"
+                disabled
+              >
+                sending ...
+              </button>
+            ) : (
+              <button
+                className="bg-pink text-white md:w-8/12 w-full py-2 mt-4  rounded-2xl font-bold"
+                onClick={(e) => handleEnquiryMessage(e)}
+              >
+                Enquire Now
+              </button>
+            )}
           </form>
         </div>
       </Dialog>
