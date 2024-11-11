@@ -16,11 +16,15 @@ import stateIcon from "../assets/images/state-icon.svg";
 import messageIcon from "../assets/images/message-icon.svg";
 import contactUsImgBgMobile from '../assets/images/contact-us-mobile-img.png'
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
+
   useEffect(()=>{
     window.scrollTo(0, 0);
   },[])
+
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <div className="banner relative w-full flex flex-col">
@@ -78,6 +82,7 @@ const Contact = () => {
             background:
               "linear-gradient(60deg, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%)",
           }}
+          onClick={() => navigate("/contact")}
         >
           Contact Us
         </button>
@@ -163,7 +168,7 @@ const Contact = () => {
                   placeholder="Phone Number"
                 />
               </div>
-              <div className="input-group shadow-xl relative flex items-center border-[1px] border-[#fff] rounded-xl p-2 gap-[20px] my-4">
+              {/* <div className="input-group shadow-xl relative flex items-center border-[1px] border-[#fff] rounded-xl p-2 gap-[20px] my-4">
                 <img src={categoryIcon} alt="" className="w-[30px] h-[30px] " />
                 <input
                   type="text"
@@ -171,7 +176,7 @@ const Contact = () => {
                   className="bg-transparent outline-none w-full text-lg text-white placeholder:text-[#DEDEDE]"
                   placeholder="Category"
                 />
-              </div>
+              </div> */}
               <div className="input-group shadow-xl relative flex items-center border-[1px] border-[#fff] rounded-xl p-2 gap-[20px] my-4">
                 <img src={stateIcon} alt="" className="w-[30px] h-[30px] " />
                 <input

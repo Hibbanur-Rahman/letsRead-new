@@ -1,8 +1,10 @@
 import React from "react";
 import childPhoto from "../assets/images/about-img.png";
 import aboutHeaderDesign from "../assets/images/about-header-design.svg";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-full flex items-center justify-center flex-col md:mt-0 mt-[-50px]">
       <h1 className="text-center text-3xl md:text-5xl font-bold leading-none m-0 p-0">
@@ -38,7 +40,8 @@ const About = () => {
             confidence and self-esteem, fostering a love for reading from an early age. The hands-on nature of our program encourages
             physical movement, communication, and collaboration, providing a unique learning experience that goes beyond screens.
           </p>
-          <button className="bg-darkPurple px-8 py-2 md:text-base text-sm rounded-lg font-bold mt-6 text-white">
+          <button className="bg-darkPurple px-8 py-2 md:text-base text-sm rounded-lg font-bold mt-6 text-white"
+          onClick={() => navigate("/about")}>
             Read More
           </button>
         </div>

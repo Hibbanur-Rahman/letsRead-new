@@ -1,5 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import programImg1 from "../assets/images/program-img-1.png";
+import programImg2 from "../assets/images/program-img-2.png";
+import programImg3 from "../assets/images/program-img-3.png";
+import programImg4 from "../assets/images/program-img-4.png";
+
 import {
   faInstagram,
   faFacebook,
@@ -16,6 +23,35 @@ import productSideDesign from "../assets/images/products-side-bottom-design.svg"
 import logo from "../assets/images/logo.svg";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const programData = [
+    {
+      img: programImg1,
+      levelHead: "Level 0 Beginners Kit",
+      desc: "Packed with engaging activities, It is the perfect start to their Reading journey.",
+    },
+    {
+      img: programImg2,
+      levelHead: "Level 1 Fluency Kit",
+      desc: "Empower Beginner with Level 1 Phonics Kit. Explore engaging CVC  to build and read through Play..",
+    },
+    {
+      img: programImg3,
+      levelHead: "Level 2 Proficiency Kit",
+      desc: "Elevate Phonics Proficiency: Master blends, Digraphs and Magic. Build Reading with Comprehension.",
+    },
+    {
+      img: programImg4,
+      levelHead: "Level 3 Mastery Kit",
+      desc: "Elevate Reading Confidence: Master advanced phonics and tricky Spelling Rules. Develop fluency and speed in Reading Stories..",
+    },
+  ];
+
+  const handleNavigate = (item) => {
+    navigate("/phoenicKit",{ state: { image: item.img, levelHead: item.levelHead, desc: item.desc },});
+  };
+
   return (
     <div className="Footer  flex flex-col relative md:mt-[250px] mt-8 w-full ">
       {/* <Arc width={1980} height={500} color="#3E0085" /> */}
@@ -73,10 +109,15 @@ const Footer = () => {
             <div className="md:w-[100px] w-[50px] h-[3px] rounded-lg mt-1 bg-yellow"></div>
 
             <ul className=" list-disc md:mt-16 mt-4">
-              <li className="md:text-lg text-sm my-2">Level 0 Beginners Kit </li>
+              {
+                Array.isArray(programData) && programData.length > 0 && programData.map((item)=> (
+                  <li className="md:text-lg text-sm my-2" onClick={()=> handleNavigate(item)}>{item.levelHead} </li>
+                ))
+              }
+              {/* <li className="md:text-lg text-sm my-2">Level 0 Beginners Kit </li>
               <li className="md:text-lg text-sm my-2">Level 1 Fluency Kit </li>
               <li className="md:text-lg text-sm my-2 ">Level 2 Proficiency Kit </li>
-              <li className="md:text-lg text-sm my-2">Level 3 Mastery Kit </li>
+              <li className="md:text-lg text-sm my-2">Level 3 Mastery Kit </li> */}
             </ul>
           </div>
         </div>
@@ -86,12 +127,12 @@ const Footer = () => {
           <div className="w-[100px] h-[3px] rounded-lg mt-1 bg-yellow"></div>
 
           <ul className="list-disc mt-16 px-4 ">
-            <li className="text-lg my-2">About Us </li>
-            <li className="text-lg my-2">Products </li>
-            <li className="text-lg my-2 ">Programs </li>
-            <li className="text-lg my-2">Resources </li>
-            <li className="text-lg my-2">Contact Us </li>
-            <li className="text-lg my-2">Blogs </li>
+            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/about")}>About Us </li>
+            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/products")} >Products </li>
+            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/programs")}>Programs </li>
+            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/resources")} >Resources </li>
+            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/contact")} >Contact Us </li>
+            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/blogs")} >Blogs </li>
           </ul>
         </div>
         <div className="md:w-3/12 w-full">
@@ -100,7 +141,7 @@ const Footer = () => {
 
           <div className="md:mt-16 mt-6 mb-4 flex gap-4 cursor-pointer">
             <FontAwesomeIcon icon={faPhone} className="md:text-2xl text-lg" />
-            <p className="md:text-lg text-sm">Phone: +9056264820</p>
+            <p className="md:text-lg text-sm">Phone: +1-7058587080</p>
           </div>
           <div className="my-4 flex gap-4">
             <FontAwesomeIcon

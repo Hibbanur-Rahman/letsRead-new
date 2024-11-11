@@ -3,12 +3,16 @@ import childPhoto2 from "../assets/images/Frame 121.png";
 import childPhoto3 from "../assets/images/Frame 126.png";
 import childPhoto2Mobile from "../assets/images/child-photo-2-mobile.png";
 import aboutBannerImg from "../assets/images/about-banner.svg";
+import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 const About = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="w-full flex flex-col items-center md:mt-0 mt-[20px]">
       <div className="w-full flex items-center justify-center flex-col relative">
@@ -34,6 +38,7 @@ const About = () => {
               background:
                 "linear-gradient(60deg, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%)",
             }}
+            onClick={() => navigate("/programs")}
           >
             Program
           </button>

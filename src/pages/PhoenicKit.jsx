@@ -95,6 +95,9 @@ const PhoenicKit = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location?.state]);
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <div className="banner w-full flex items-center justify-center">

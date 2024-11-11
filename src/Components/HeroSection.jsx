@@ -75,7 +75,7 @@ const HeroSection = () => {
           ignite a passion for lifelong learning.
         </p>
         <p className="text-white md:text-2xl text-sm md:w-7/12 mt-5">
-          100+ Schools &gt;&gt; 10000+ Teachers &gt;&gt; 50000+ Students{" "}
+          100+ Schools ... 10000+ Teachers ... 50000+ Students{" "}
         </p>
         <button
           onClick={() => dispatch(openEnquireModal(true))}

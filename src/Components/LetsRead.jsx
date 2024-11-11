@@ -14,7 +14,7 @@ const LetsRead = () => {
     <div className="w-full flex flex-col items-center justify-center mt-32 relative">
       <h1 className="text-center md:text-3xl text-2xl md:px-0 px-3 font-semiBold text-black">
         {" "}
-        <span className="text-darkPurple underline font-bold">LETS READ</span>{" "}
+        <span className="text-darkPurple underline font-bold">LET'S READ</span>{" "}
         Helps Your Child Develope
       </h1>
       <div className="absolute md:flex hidden top-[-20px] left-[-50px] h-[150px] w-[150px]">

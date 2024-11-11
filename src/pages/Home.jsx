@@ -65,49 +65,49 @@ const Home = () => {
               <h5 className="font-bold text-2xl">For the Parent & Child:</h5>
               <img src={whyDoCardImg4} alt="" className="h-[180px] mt-3 mb-3" />
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Help your child to become a fearless, confident and motivated Reader.
+              . Help your child to become a fearless, confident and motivated Reader.
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Stress free and Playful Learning.
+              . Stress free and Playful Learning.
               </p>
             </div>
             <div className="w-3/12 bg-white flex flex-col items-center p-5 rounded-sm shadow-lg">
               <h5 className="font-bold text-2xl">For School Owners:</h5>
               <img src={whyDoCardImg2} alt="" className="h-[180px] mt-3 mb-3" />
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Boosts admissions
+              . Boosts admissions
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Guarantee Academic Success and Better Results
+              . Guarantee Academic Success and Better Results
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Strengthens the School&apos;s Brand
+              . Strengthens the School&apos;s Brand
               </p>
             </div>
             <div className="w-3/12 bg-white flex flex-col items-center p-5 rounded-sm shadow-lg">
               <h5 className="font-bold text-2xl">For Teachers:</h5>
               <img src={whyDoCardImg3} alt="" className="h-[180px] mt-3 mb-3" />
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Reduces Workload with play-based Learning
+              . Reduces Workload with play-based Learning
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Enables Differentiation (Applicable for all Age group)
+              . Enables Differentiation (Applicable for all Age group)
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Easy to follow, step by step content Provided.
+              . Easy to follow, step by step content Provided.
               </p>
             </div>
             <div className="w-3/12 bg-white flex flex-col items-center p-5 rounded-sm shadow-lg">
               <h5 className="font-bold text-2xl">For Ambitious Entrepreneurs:</h5>
               <img src={whyDoCardImg1} alt="" className="h-[180px] mt-3 mb-3" />
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Affordable Startup Opportunity.
+              . Affordable Startup Opportunity.
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Personal and Professional Growth.
+              . Personal and Professional Growth.
               </p>
               <p className="text-[#455A64] w-full">
-                &gt;&gt; Financial Independence.
+              . Financial Independence.
               </p>
             </div>
           </div>
