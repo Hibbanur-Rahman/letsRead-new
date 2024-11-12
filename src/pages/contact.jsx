@@ -104,7 +104,7 @@ const Contact = () => {
               >
                 <i className="bi bi-telephone text-4xl"></i>
               </div>
-              <p className="text-white underline text-xl">+918520824374</p>
+              <p className="text-white underline text-xl">+91-7058587080</p>
             </div>
             <div className="flex items-center  gap-[20px] md:my-4 my-2">
               <div

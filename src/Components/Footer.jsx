@@ -141,7 +141,7 @@ const Footer = () => {
 
           <div className="md:mt-16 mt-6 mb-4 flex gap-4 cursor-pointer">
             <FontAwesomeIcon icon={faPhone} className="md:text-2xl text-lg" />
-            <p className="md:text-lg text-sm">Phone: +1-7058587080</p>
+            <p className="md:text-lg text-sm">Phone: +91-7058587080</p>
           </div>
           <div className="my-4 flex gap-4">
             <FontAwesomeIcon

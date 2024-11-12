@@ -7,7 +7,7 @@ import Product from "../Components/Product";
 import LetsRead from "../Components/LetsRead";
 import Achievement from "../Components/Achievement";
 
-import whyDoCardImg1 from "../assets/images/why-do-card-img-1.svg";
+import whyDoCardImg1 from "../assets/images/why-do-card-img-1.jpg";
 import whyDoCardImg2 from "../assets/images/why-do-card-img-2.svg";
 import whyDoCardImg3 from "../assets/images/why-do-card-img-3.svg";
 import whyDoCardImg4 from "../assets/images/why-do-card-img-4.svg";
@@ -99,7 +99,7 @@ const Home = () => {
             </div>
             <div className="w-3/12 bg-white flex flex-col items-center p-5 rounded-sm shadow-lg">
               <h5 className="font-bold text-2xl">For Ambitious Entrepreneurs:</h5>
-              <img src={whyDoCardImg1} alt="" className="h-[180px] mt-3 mb-3" />
+              <img src={whyDoCardImg1} alt="" className="h-[150px] mt-3 mb-3" />
               <p className="text-[#455A64] w-full">
               . Affordable Startup Opportunity.
               </p>
