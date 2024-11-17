@@ -89,7 +89,7 @@ const HeroSection = () => {
         handler={handleModal}
         className="flex justify-center overflow-scroll content-center absolute rounded-2xl w-full h-full "
       >
-        <div className="w-full flex flex-col items-center md:h-[880px] h-max md:pb-0 pb-4  bg-white relative  rounded-2xl overflow-hidden shadow-2xl">
+        <div className="w-full flex flex-col items-center md:h-[880px] h-max  pb-[0]  bg-white relative  rounded-2xl overflow-hidden shadow-2xl">
           <button
             className="absolute  right-2 top-1 bg-white rounded-full shadow-xl"
             onClick={() => dispatch(openEnquireModal(false))}
@@ -101,18 +101,15 @@ const HeroSection = () => {
             alt="aboutimg"
             className="md:h-[300px] h-[150px] w-full object-cover object-center overflow-hidden  "
           />
-          <div className="w-11/12 py-4 md:px-0 px-3   bg-pink rounded-3xl md:absolute relative md:mt-0 mt-[-60px] md:top-[250px] md:mx-6">
-            <h1 className="text-center  md:text-[26px] text-base font-bold text-white">
-              {" "}
-              Transformative Education From The Star
-            </h1>
-            <p className="text-center text-white md:w-6/12 w-full md:text-base text-xs mx-auto">
+          <div className="w-11/12 py-4 md:px-0 px-3   bg-pink rounded-3xl md:absolute relative md:mt-0 mt-[-30px] md:top-[250px] md:mx-6">
+           
+            <p className="text-center text-white md:w-9/12 w-full md:text-base text-xs mx-auto">
               Please Complete The form below, and we will get back to you within
               24 hours.
             </p>
           </div>
           <form
-            className="w-full  md:px-0 px-3 flex flex-col gap-[14px] justify-center items-center md:mt-20 mt-4"
+            className="w-full  md:px-0 px-3 flex flex-col gap-[14px] justify-center items-center md:pt-[50px] pt-[20px] "
             onSubmit={(e) => handleEnquiryMessage(e)}
           >
             <input
@@ -140,7 +137,7 @@ const HeroSection = () => {
               value={state}
               onChange={(e) => setState(e.target.value)}
               type="text"
-              placeholder="Enter Your State"
+              placeholder="Enter Your State Name"
               className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black "
             />
             <input

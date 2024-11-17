@@ -38,7 +38,11 @@ const ProductView = () => {
 
   //handle Navigate order
   const handleNavigateOrder = () => {
-    navigate("/order", { state: { item: productDetail } });
+    // navigate("/order", { state: { item: productDetail } });
+    const externalLink =
+      location?.state?.item?.productLink ||
+      "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/";
+    window.open(externalLink, "_blank");
   };
 
   useEffect(() => {
@@ -299,7 +303,7 @@ const ProductView = () => {
       <div className="md:w-11/12 w-full md:px-0  rounded-3xl rounded-t-none  overflow-hidden">
         <div className="bg-[#FFF9D7] md:p-8 p-3 flex flex-col w-full">
           <h1 className="font-bold md:text-3xl text-lg underline">
-            Introducing Learner’s Book 1:{" "}
+            Introducing {productDetail?.heading}:{" "}
           </h1>
           <p className="text-gray text-center md:mt-4 mt-2 md:text-xl font-bold">
             A Vibrant Journey into Phonics Sounds for Young Minds!

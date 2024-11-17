@@ -14,16 +14,16 @@ import phoneNumberIcon from "../assets/images/mobile-icon.svg";
 import categoryIcon from "../assets/images/category-icon.svg";
 import stateIcon from "../assets/images/state-icon.svg";
 import messageIcon from "../assets/images/message-icon.svg";
-import contactUsImgBgMobile from '../assets/images/contact-us-mobile-img.png'
+import contactUsImgBgMobile from "../assets/images/contact-us-mobile-img.png";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const navigate = useNavigate();
 
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[])
+  }, []);
 
   return (
     <div className="w-full flex flex-col items-center justify-center">
@@ -40,7 +40,11 @@ const Contact = () => {
           alt=""
           className="h-[70px] w-[70px] absolute top-[20%] left-[100px]"
         />
-        <img src={Banner} alt="Contact Banner" className="w-full md:h-auto h-[400px] object-cover " />
+        <img
+          src={Banner}
+          alt="Contact Banner"
+          className="w-full md:h-auto h-[400px] object-cover "
+        />
         <div
           className="circle h-[150px] w-[150px] rounded-full absolute left-[-40px] bottom-[40px]"
           style={{
@@ -90,7 +94,11 @@ const Contact = () => {
 
       <div className="md:w-11/12 w-full md:px-0 px-3 flex flex-col items-center justify-center relative overflow-hidden md:mt-[-180px] -z-[0] ">
         <img src={messageDesign} alt="" className="w-full md:block hidden" />
-        <img src={contactUsImgBgMobile} alt="" className="w-full md:hidden block" />
+        <img
+          src={contactUsImgBgMobile}
+          alt=""
+          className="w-full md:hidden block"
+        />
         <div className="w-full flex md:flex-row flex-col items-center md:justify-between absolute p-16">
           <div className="md:w-3/12 flex flex-col md:mb-0 mb-4">
             <img src={design2} alt="" className="" />
@@ -117,7 +125,7 @@ const Contact = () => {
                 <i className="bi bi-envelope text-4xl"></i>
               </div>
               <p className="text-white underline text-xl">
-                sales@letsreadindia.in
+                info@letsreadindia.in
               </p>
             </div>
             <div className="flex items-center  gap-[20px] md:my-4 my-2">
@@ -191,7 +199,7 @@ const Contact = () => {
                 <textarea
                   type="text"
                   name="message"
-                  className="  bg-transparent outline-none w-full text-lg text-white placeholder:text-[#DEDEDE]"
+                  className="  bg-transparent outline-none w-full text-lg text-white placeholder:text-[#DEDEDE] resize-none"
                   placeholder="Message"
                 />
               </div>
@@ -207,14 +215,17 @@ const Contact = () => {
             </form>
           </div>
           <div className="md:w-3/12 flex h-full relative">
-            <img src={design1} alt="" className="absolute top-[80px] right-[-30px]" />
+            <img
+              src={design1}
+              alt=""
+              className="absolute top-[80px] right-[-30px]"
+            />
           </div>
         </div>
       </div>
       <div className="w-11/12 md:p-4 mt-4 md:mb-0 mb-8">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30278.734951484046!2d73.86629863398946!3d18.445487549688604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ebaca708a5c3%3A0xed532202c8e79413!2sKondhwa%20Budruk%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1723326054660!5m2!1sen!2sin"
-         
           //   height="450"
           style={{ border: "0" }}
           allowfullscreen=""

@@ -22,38 +22,46 @@ const Product = () => {
     {
       id: 1,
       image: productImg1,
-      heading: "LR Educators Handbook",
+      heading: "Let's Read Educator's Guide",
       description:
-        "Let’s Read Educators Handbook is your one stop guide to teaching phonics effectively. It includes a Curriculum plan and a rubric to check Learning outcomes.",
+        "Our Let's Read Educator's Handbook is your ultimate guide to teaching phonics skills effectively. It’s suitable for both teachers, parents and learners of all age groups.",
       icon: productCardIcon1,
-      amount:250,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+      amount: 600,
     },
     {
       id: 2,
       image: productImg2,
-      heading: "Learner’s Guide 1",
+      heading: "Let’s Read Kits",
       description:
-        "Our Let's Read Learner's Guide 1 is your ultimate guide to teaching phonics skills effectively. Thank you for choosing Let's Read!",
-      icon: productCardIcon2,
-      amount:350,
+        "Let's Read kits are fun, engaging hands-on activities and games that support reading at every level. Purchase these exciting activities to make reading stress free.",
+      icon: productCardIcon1,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+      amount: 8000,
     },
     {
       id: 3,
       image: productImg3,
-      heading:
-        "Learner’s Book 2: A Vibrant Journey into Phonics Sounds for Young Minds",
+      heading: "Level 0 Kit",
       description:
-        "Learner’s book 2 provides invaluable guidance in teaching phonics skills to young learners.",
-      icon: productCardIcon3,
-      amount:200,
+        "Level 0 is for beginners and mostly young children. The carefully planned set of activities help the children to transition from mother tongue to English, recognise letters and associate sounds with symbols. Although this level is for early years, activities like the picture cards can be used as prompts for older children to improve spoken English. The Level 0 manual describes every activity in detail.",
+      icon: productCardIcon1,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+      amount: 8000,
     },
     {
       id: 4,
       image: productImg4,
-      heading: "Learner's Guide 3",
-      description: "Discover Phonics Mastery with Learner's Guide Book 3",
-      icon: productCardIcon4,
-      amount:600,
+      heading: "Level 1 Kit",
+      description:
+        "Level 1 is all about learning to read CVC (3 letter) words, sentences and stories. The carefully selected activities help young learners to master fluency in reading and pick up speed. This kit is excellent for building self esteem for your little ones. The Level 1 kit comes with a detailed manual that describes every activity in the kit.",
+      icon: productCardIcon1,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+      amount: 8000,
     },
   ];
   return (

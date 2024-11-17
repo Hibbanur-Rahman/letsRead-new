@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import {
   Drawer,
@@ -23,23 +23,44 @@ import { useDispatch } from "react-redux";
 import { openEnquireModal } from "../redux/enquireModalSlice";
 
 const Header = () => {
-  const dispatch=useDispatch();
+  const dispatch = useDispatch();
 
   const location = useLocation();
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
 
+  // Listen for scroll events to make the navbar sticky
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <nav className="bg-white p-2  flex justify-center items-center w-full md:relative fixed md:top-0 top-[0px] z-[100] md:shadow-none shadow-lg">
+    <nav
+      className={`bg-white p-2 flex justify-center items-center w-full z-[100]   transition-all duration-300 ${
+        isSticky ? "shadow-md top-0 fixed" : "md:top-0 top-[0px]"
+      }`}
+    >
+      {" "}
       <div className="flex justify-between items-center w-full md:px-6 ">
         <img
           src={LetsReadImg}
           alt="img"
           className="md:w-[200px] md:h-[50px] w-[100px] h-[30px] cursor-pointer"
-          onClick={()=>navigate('/')}
+          onClick={() => navigate("/")}
         />
         <nav className=" md:flex hidden gap-6 items-center">
           <NavLink
@@ -96,9 +117,10 @@ const Header = () => {
               background:
                 "linear-gradient(60deg, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%)",
             }}
-            onClick={()=>{
-              navigate('/')
-              dispatch(openEnquireModal(true))}}
+            onClick={() => {
+              navigate("/");
+              dispatch(openEnquireModal(true));
+            }}
           >
             Enquire Now
           </button>
@@ -108,7 +130,10 @@ const Header = () => {
             <BiSolidUserDetail className="text-3xl  text-yellow" />
           </div>
           <div className="rounded-full cursor-pointer shadow-md flex justify-center items-center bg-[#7E57C2] p-1 px-2">
-            <FiPhoneCall className="text-2xl  text-white" onClick={()=>dispatch(openEnquireModal(true))} />
+            <FiPhoneCall
+              className="text-2xl  text-white"
+              onClick={() => dispatch(openEnquireModal(true))}
+            />
           </div>
           <div
             className="rounded-full cursor-pointer shadow-md flex justify-center items-center bg-pink p-1  px-2"

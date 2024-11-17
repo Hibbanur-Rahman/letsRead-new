@@ -44,6 +44,7 @@ const Products = () => {
       description:
         "Our Let's Read Educator's Handbook is your ultimate guide to teaching phonics skills effectively. It’s suitable for both teachers, parents and learners of all age groups.",
       icon: productCardIcon1,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:600,
     },
     {
@@ -53,6 +54,7 @@ const Products = () => {
       description:
         "Let's Read kits are fun, engaging hands-on activities and games that support reading at every level. Purchase these exciting activities to make reading stress free.",
       icon: productCardIcon1,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:8000,
     },
     {
@@ -62,6 +64,7 @@ const Products = () => {
       description:
         "Level 0 is for beginners and mostly young children. The carefully planned set of activities help the children to transition from mother tongue to English, recognise letters and associate sounds with symbols. Although this level is for early years, activities like the picture cards can be used as prompts for older children to improve spoken English. The Level 0 manual describes every activity in detail.",
       icon: productCardIcon1,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:8000,
     },
     {
@@ -71,6 +74,7 @@ const Products = () => {
       description:
         "Level 1 is all about learning to read CVC (3 letter) words, sentences and stories. The carefully selected activities help young learners to master fluency in reading and pick up speed. This kit is excellent for building self esteem for your little ones. The Level 1 kit comes with a detailed manual that describes every activity in the kit.",
       icon: productCardIcon1,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:8000,
     },
     {
@@ -80,6 +84,7 @@ const Products = () => {
       description:
         "Level 2 has words with blends, digraphs, double consonants, compound words, and magic-e, sentences and stories. The carefully selected activities help young learners to become proficient in reading and pick up speed. This kit is excellent for building self esteem for your little ones. The Level 2 kit comes with a detailed manual that describes every activity in the kit.",
       icon: productCardIcon1,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:8000,
     },
     {
@@ -89,6 +94,7 @@ const Products = () => {
       description:
       "Level 3 has activities with long vowel A,E,I,O, U families, complex, tricky phonograms and games to learn spelling rules, read sentences and long paragraphs fluently. The carefully selected activities help young  learners to attain mastery in reading age appropriate books. This kit is excellent for building self esteem for children of all age groups. The Level 3 kit comes with a detailed manual that describes every activity in the kit.",
       icon: productCardIcon1,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:8000,
     },
     {
@@ -98,6 +104,7 @@ const Products = () => {
       description:
       "The Let's Read school books are written for Nursery, Junior KG, Senior KG and Class1 . It’s suitable for teachers, parents and learners of respective age groups.",
       icon: productCardIcon2,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:300,
     },
     {
@@ -107,6 +114,7 @@ const Products = () => {
       description:
       "The Let's Read Nursery Reader is especially designed to teach spoken English to second language learners. The book focuses on developing listening and speaking skills and ensures smooth transition from mother to English. The workbook is filled with cognitive stimulation activities that stimulate higher order thinking skills and are perfect for tiny tots. The stickers and tracing activities are an instant favourite with toddlers",
       icon: productCardIcon3,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount: 300,
     },
     {
@@ -116,6 +124,7 @@ const Products = () => {
       description:
       "The Let's Read Jr. KG Reader is especially designed to practise reading CVC words and sentences with confidence and speed. The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.",
       icon: productCardIcon3,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount: 180,
     },
     {
@@ -125,6 +134,7 @@ const Products = () => {
       description:
       "The Let's Read Sr. KG Reader is especially designed to practise words with blends, digraphs, double consonants, compound words, and magic-e, sentences and stories.The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.",
       icon: productCardIcon3,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount: 180,
     },
     {
@@ -134,6 +144,7 @@ const Products = () => {
       description:
       "The Let's Read Class 1 Reader is especially designed to practise long vowel A,E,I,O, U families, complex, tricky phonograms, learn spelling rules, read sentences and long paragraphs fluently. The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.The workbook is filled with cognitive stimulation activities that stimulate higher order thinking skills and are perfect for proficient readers. They provide the correct amount of challenge to build mastery.",
       icon: productCardIcon3,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount: 240,
     },
     {
@@ -143,6 +154,7 @@ const Products = () => {
       description:
       "The Let's Read - Reading Age Diagnostic Tool is a simple to use assessment tool that takes less than a minute to identify the Reading Age of a learner. All instructions of use are given in the manual. It is user friendly and does not require any formal training.",
       icon: productCardIcon3,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount: 500,
     },
     {
@@ -152,6 +164,7 @@ const Products = () => {
       description:
       "The ancient game of Snakes and Ladders is modified to read sight words instead of numbers! This simple, multiple player game is suitable for young children and a perfect birthday present! Your little one will learn 100 sight words through fun and play!",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:550,
     },
     {
@@ -161,6 +174,7 @@ const Products = () => {
       description:
       "The ancient game of Snakes and Ladders is modified to read sight words instead of numbers! This simple, multiple player game is suitable for young children and a perfect birthday present! Your little one will learn 100 sight words through fun and play!",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:550,
     },
     {
@@ -170,6 +184,7 @@ const Products = () => {
       description:
       " Lexicon is an exciting game to learn grammar - parts of speech and build fantastic vocabulary. This simple, multiple player game is suitable for young children and is a perfect birthday present! It can also be considered for prize distribution in schools. Reinforce grammar concepts through fun and play !",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:599,
     },
     {
@@ -179,6 +194,7 @@ const Products = () => {
       description:
       " Bingo Lingo is an all time favourite of school children. This exciting group game enhances vocabulary, improves spelling rules and word meanings. It is suitable for young children and is a perfect birthday present! It can also be considered for prize distribution in schools. Make learning enjoyable through Bingo Lingo! Every set has got a different spelling rule.",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:600,
     },
     {
@@ -188,6 +204,7 @@ const Products = () => {
       description:
       "Silent Letters Game is an instant hit. This exciting group game enhances vocabulary and helps learners to reinforce the rules of reading words with silent letters. It is suitable for young children and is a perfect birthday present! It can also be considered for prize distribution in schools. Make spellings enjoyable through the silent letter game.",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:600,
     },
     {
@@ -197,6 +214,7 @@ const Products = () => {
       description:
       "Phoneme cubes are interesting educational blocks that have a combination of sounds written on either side. It is a fun family game or a group game for children. You roll the dice and say words or spellings with that combination. The cubes are excellent to revise/ assess spellings, vocabulary or even word meanings. Educators can make up their own rules and modify them to suit the learner.",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:600,
     },
     {
@@ -206,6 +224,7 @@ const Products = () => {
       description:
       "Alphabet blocks are interesting educational cubes that have letters from a-z written on either side. It is an interesting activity for children. The learner can arrange the letters in sequence, or build words, fill in and place missing letters or stack up the blocks to build big words. These blocks enhance eye hand coordination, build fine motor skills and enhance cognitive and critical thinking skills. Educators can make up their own rules and modify instructions to suit the learner and make the activity easier or challenging.",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:600,
     },
     {
@@ -215,6 +234,7 @@ const Products = () => {
       description:
       "Tangle Mangle is a fantastic game that requires movements and enhances gross motor skills. The learner has to twist and move his/her body to spell 3 or 4 / 5 letter words! The squeals of laughter and giggles makes this game incomparable! The educator can say words that are challenging or easy according to the level of the child.",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:699,
     },
     {
@@ -224,6 +244,7 @@ const Products = () => {
       description:
       "Hop Skip Jump is a fantastic game that requires movements and enhances gross motor skills. The learner has to twist and move his/her body to  recognise letters of the alphabet. The squeals of laughter and giggles makes this game incomparable! The educator can say letters and the child has to look for it and step on it. The adult can make the game challenging or easy according to the level of the child.",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:699,
     },
     {
@@ -233,6 +254,7 @@ const Products = () => {
       description:
       "The level 1 DOT Books series help learners to master 3 letter words. Each set consists of a word book, a sight word book, a sentence book and two story books. The set focuses on a particular vowel sound and the entire set has words with the same sound. DOT Books are unique and one of it’s kind !",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:599,
     },
     {
@@ -242,6 +264,7 @@ const Products = () => {
       description:
       "The level 2 DOT Books series help learners to master words with blends, digraphs, double consonants, compound words, magic e words.. Each set consists of a word book, a sight word book, a sentence book and two/three story books. The set focuses on a particular phoneme and the entire set practises the same phoneme. DOT Books are unique and one of its kind ! Experience the joy of watching your child gain confidence and master the art of reading!",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:599,
     },
     {
@@ -251,6 +274,7 @@ const Products = () => {
       description:
       "A beautifully written book in poetry form; this book explores the wonders of the universe and instills a sense of wonder and joy in the child’s mind. Dive into the magical world of the mysteries of nature and ponder on the echoing chorus of the book… Where did they come from ?",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:449,
     },
     {
@@ -260,6 +284,7 @@ const Products = () => {
       description:
       "This delightful book explores the critters (creatures) of the Western Ghat. It is written as a poetry and is a fascinating journey of a young girl as she observes and explores tiny yet magnificent creatures in the Western ghats.",
       icon: productCardIcon4,
+      productLink:'https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/',
       amount:449,
     },
   ];
