@@ -192,7 +192,7 @@ const Home = () => {
           >
             <div className="w-full px-8">
               <div className="w-full bg-white flex flex-col items-center p-5 rounded-sm shadow-lg">
-                <h5 className="font-bold text-2xl">For the Child:</h5>
+                <h5 className="font-bold text-2xl">For Ambitious Entrepreneurs:</h5>
                 <img
                   src={whyDoCardImg1}
                   alt=""

@@ -101,7 +101,7 @@ const Footer = () => {
               <li className=" md:text-lg text-sm my-2">Jr. Kg School Reader & workbook</li>
               <li className=" md:text-lg text-sm my-2">Sr. Kg School Reader & workbook</li>
               <li className=" md:text-lg text-sm my-2">Grade 1 School Reader & workbook</li>
-              <li className=" md:text-lg text-sm my-2">Let’s Read Board Game</li>
+              {/* <li className=" md:text-lg text-sm my-2">Let’s Read Board Game</li> */}
             </ul>
           </div>
           <div className=" w-6/12 ">
@@ -111,7 +111,7 @@ const Footer = () => {
             <ul className=" list-disc md:mt-16 mt-4">
               {
                 Array.isArray(programData) && programData.length > 0 && programData.map((item)=> (
-                  <li className="md:text-lg text-sm my-2" onClick={()=> handleNavigate(item)}>{item.levelHead} </li>
+                  <li className="md:text-lg text-sm my-2 cursor-pointer" onClick={()=> handleNavigate(item)}>{item.levelHead} </li>
                 ))
               }
               {/* <li className="md:text-lg text-sm my-2">Level 0 Beginners Kit </li>
