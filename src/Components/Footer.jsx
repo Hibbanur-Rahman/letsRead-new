@@ -49,7 +49,9 @@ const Footer = () => {
   ];
 
   const handleNavigate = (item) => {
-    navigate("/phoenicKit",{ state: { image: item.img, levelHead: item.levelHead, desc: item.desc },});
+    navigate("/phoenicKit", {
+      state: { image: item.img, levelHead: item.levelHead, desc: item.desc },
+    });
   };
 
   return (
@@ -89,50 +91,95 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-4/12 w-full gap-[30px] flex justify-between">
-          <div className=" w-6/12 ">
-            <h1 className="md:text-3xl text-lg font-bold  ">Let's Read Books</h1>
+        <div className="md:w-3/12 w-full flex justify-between">
+          <div className=" w-full ">
+            <h1 className="md:text-3xl text-lg font-bold  ">
+              Let's Read Books
+            </h1>
             <div className="md:w-[100px] w-[50px] h-[3px] rounded-lg mt-1 bg-yellow"></div>
             <ul className=" list-disc md:mt-16 mt-4 md:ps-0 ps-4">
               <li className=" md:text-lg text-sm my-2">
                 Let&apos;s Read Educator&apos;s Handbook
               </li>
-              <li className=" md:text-lg text-sm my-2">Nursery School Reader & workbook</li>
-              <li className=" md:text-lg text-sm my-2">Jr. Kg School Reader & workbook</li>
-              <li className=" md:text-lg text-sm my-2">Sr. Kg School Reader & workbook</li>
-              <li className=" md:text-lg text-sm my-2">Grade 1 School Reader & workbook</li>
+              <li className=" md:text-lg text-sm my-2">
+                Nursery School Reader & workbook
+              </li>
+              <li className=" md:text-lg text-sm my-2">
+                Jr. Kg School Reader & workbook
+              </li>
+              <li className=" md:text-lg text-sm my-2">
+                Sr. Kg School Reader & workbook
+              </li>
+              <li className=" md:text-lg text-sm my-2">
+                Grade 1 School Reader & workbook
+              </li>
               {/* <li className=" md:text-lg text-sm my-2">Let’s Read Board Game</li> */}
             </ul>
           </div>
-          <div className=" w-6/12 ">
-            <h1 className="md:text-3xl text-lg font-bold">Programs</h1>
-            <div className="md:w-[100px] w-[50px] h-[3px] rounded-lg mt-1 bg-yellow"></div>
+        </div>
+        <div className="md:w-2/12 w-full ">
+          <h1 className="md:text-3xl text-lg font-bold">Programs</h1>
+          <div className="md:w-[100px] w-[50px] h-[3px] rounded-lg mt-1 bg-yellow"></div>
 
-            <ul className=" list-disc md:mt-16 mt-4">
-              {
-                Array.isArray(programData) && programData.length > 0 && programData.map((item)=> (
-                  <li className="md:text-lg text-sm my-2 cursor-pointer" onClick={()=> handleNavigate(item)}>{item.levelHead} </li>
-                ))
-              }
-              {/* <li className="md:text-lg text-sm my-2">Level 0 Beginners Kit </li>
+          <ul className=" list-disc md:mt-16 mt-4">
+            {Array.isArray(programData) &&
+              programData.length > 0 &&
+              programData.map((item) => (
+                <li
+                  className="md:text-lg text-sm my-2 cursor-pointer"
+                  onClick={() => handleNavigate(item)}
+                >
+                  {item.levelHead}{" "}
+                </li>
+              ))}
+            {/* <li className="md:text-lg text-sm my-2">Level 0 Beginners Kit </li>
               <li className="md:text-lg text-sm my-2">Level 1 Fluency Kit </li>
               <li className="md:text-lg text-sm my-2 ">Level 2 Proficiency Kit </li>
               <li className="md:text-lg text-sm my-2">Level 3 Mastery Kit </li> */}
-            </ul>
-          </div>
+          </ul>
         </div>
 
-        <div className="md:w-1/12 md:flex flex-col hidden">
+        <div className="md:w-2/12 md:flex flex-col ">
           <h1 className="text-3xl font-bold">Company</h1>
           <div className="w-[100px] h-[3px] rounded-lg mt-1 bg-yellow"></div>
 
           <ul className="list-disc mt-16 px-4 ">
-            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/about")}>About Us </li>
-            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/products")} >Products </li>
-            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/programs")}>Programs </li>
-            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/resources")} >Resources </li>
-            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/contact")} >Contact Us </li>
-            <li className="text-lg my-2 cursor-pointer" onClick={() => navigate("/blogs")} >Blogs </li>
+            <li
+              className="text-lg my-2 cursor-pointer"
+              onClick={() => navigate("/about")}
+            >
+              About Us{" "}
+            </li>
+            <li
+              className="text-lg my-2 cursor-pointer"
+              onClick={() => navigate("/products")}
+            >
+              Products{" "}
+            </li>
+            <li
+              className="text-lg my-2 cursor-pointer"
+              onClick={() => navigate("/programs")}
+            >
+              Programs{" "}
+            </li>
+            <li
+              className="text-lg my-2 cursor-pointer"
+              onClick={() => navigate("/resources")}
+            >
+              Resources{" "}
+            </li>
+            <li
+              className="text-lg my-2 cursor-pointer"
+              onClick={() => navigate("/contact")}
+            >
+              Contact Us{" "}
+            </li>
+            <li
+              className="text-lg my-2 cursor-pointer"
+              onClick={() => navigate("/blogs")}
+            >
+              Blogs{" "}
+            </li>
           </ul>
         </div>
         <div className="md:w-3/12 w-full">
