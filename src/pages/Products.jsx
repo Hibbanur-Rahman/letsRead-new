@@ -47,7 +47,7 @@ const Products = () => {
         "Our Let's Read Educator's Handbook is your ultimate guide to teaching phonics skills effectively. It’s suitable for both teachers, parents and learners of all age groups.",
       icon: productCardIcon1,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/phonics-reading-skill-educators-handbook/",
       type: "book",
       amount: 600,
     },
@@ -59,8 +59,8 @@ const Products = () => {
         "Let's Read kits are fun, engaging hands-on activities and games that support reading at every level. Purchase these exciting activities to make reading stress free.",
       icon: productCardIcon1,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "game",
+        " ",
+      type: "book",
       amount: 8000,
     },
     {
@@ -71,7 +71,7 @@ const Products = () => {
         "Level 0 is for beginners and mostly young children. The carefully planned set of activities help the children to transition from mother tongue to English, recognise letters and associate sounds with symbols. Although this level is for early years, activities like the picture cards can be used as prompts for older children to improve spoken English. The Level 0 manual describes every activity in detail.",
       icon: productCardIcon1,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        " ",
       type: "book",
       amount: 8000,
     },
@@ -83,8 +83,8 @@ const Products = () => {
         "Level 1 is all about learning to read CVC (3 letter) words, sentences and stories. The carefully selected activities help young learners to master fluency in reading and pick up speed. This kit is excellent for building self esteem for your little ones. The Level 1 kit comes with a detailed manual that describes every activity in the kit.",
       icon: productCardIcon1,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "game",
+        " ",
+      type: "book",
       amount: 8000,
     },
     {
@@ -95,7 +95,7 @@ const Products = () => {
         "Level 2 has words with blends, digraphs, double consonants, compound words, and magic-e, sentences and stories. The carefully selected activities help young learners to become proficient in reading and pick up speed. This kit is excellent for building self esteem for your little ones. The Level 2 kit comes with a detailed manual that describes every activity in the kit.",
       icon: productCardIcon1,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        " ",
       type: "book",
       amount: 8000,
     },
@@ -107,7 +107,7 @@ const Products = () => {
         "Level 3 has activities with long vowel A,E,I,O, U families, complex, tricky phonograms and games to learn spelling rules, read sentences and long paragraphs fluently. The carefully selected activities help young  learners to attain mastery in reading age appropriate books. This kit is excellent for building self esteem for children of all age groups. The Level 3 kit comes with a detailed manual that describes every activity in the kit.",
       icon: productCardIcon1,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        " ",
       type: "book",
       amount: 8000,
     },
@@ -119,55 +119,103 @@ const Products = () => {
         "The Let's Read school books are written for Nursery, Junior KG, Senior KG and Class1 . It’s suitable for teachers, parents and learners of respective age groups.",
       icon: productCardIcon2,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/lets-read-nursery-reader/",
       type: "book",
       amount: 300,
     },
     {
       id: 8,
       image: productImg8,
-      heading: "Let’s Read Nursery Reader and Workbook",
+      heading: "Let’s Read Nursery Reader",
       description:
         "The Let's Read Nursery Reader is especially designed to teach spoken English to second language learners. The book focuses on developing listening and speaking skills and ensures smooth transition from mother to English. The workbook is filled with cognitive stimulation activities that stimulate higher order thinking skills and are perfect for tiny tots. The stickers and tracing activities are an instant favourite with toddlers",
       icon: productCardIcon3,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/lets-read-nursery-reader/",
+      type: "book",
+      amount: 300,
+    },
+    {
+      id: 26,
+      image: productImg8,
+      heading: "Let’s Read Nursery Workbook",
+      description:
+        "The Let's Read Nursery Workbook is especially designed to teach writing English as second language learners. The Workbook focuses on developing writing and speaking skills and ensures smooth transition from mother to English. The workbook is filled with cognitive stimulation activities that stimulate higher order thinking skills and are perfect for tiny tots. The stickers and tracing activities are an instant favourite with toddlers",
+      icon: productCardIcon3,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/lets-read-nursery-workbook/",
       type: "book",
       amount: 300,
     },
     {
       id: 9,
       image: productImg9,
-      heading: "Let’s Read Jr. KG Reader and Workbook",
+      heading: "Let’s Read Jr. KG Reader",
       description:
         "The Let's Read Jr. KG Reader is especially designed to practise reading CVC words and sentences with confidence and speed. The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.",
       icon: productCardIcon3,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/lets-read-jr-kg-reader/",
+      type: "book",
+      amount: 180,
+    },
+    {
+      id: 27,
+      image: productImg9,
+      heading: "Let’s Read Jr. KG Workbook",
+      description:
+        "The Let's Read Jr. KG Workbook focuses on developing writing and speaking skills and ensures smooth transition from mother to English. The workbook is filled with cognitive stimulation activities that stimulate higher order thinking skills and are perfect for tiny tots. The stickers and tracing activities are an instant favourite with toddlers",
+      icon: productCardIcon3,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/lets-read-jr-kg-workbook/",
       type: "book",
       amount: 180,
     },
     {
       id: 10,
       image: productImg10,
-      heading: " Let’s Read Sr. KG Reader and Workbook",
+      heading: " Let’s Read Sr. KG Reader",
       description:
         "The Let's Read Sr. KG Reader is especially designed to practise words with blends, digraphs, double consonants, compound words, and magic-e, sentences and stories.The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.",
       icon: productCardIcon3,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "game",
+        "https://letsreadindia.myinstamojo.com/product/lets-read-sr-kg-reader/",
+      type: "book",
+      amount: 180,
+    },
+    {
+      id: 28,
+      image: productImg10,
+      heading: " Let’s Read Sr. KG Workbook",
+      description:
+        "The Let's Read Sr. KG Workbook focuses on developing writing and speaking skills and ensures smooth transition from mother to English. The workbook is filled with cognitive stimulation activities that stimulate higher order thinking skills and are perfect for tiny tots. The stickers and tracing activities are an instant favourite among children.",
+      icon: productCardIcon3,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/lets-read-sr-kg-workbook/",
+      type: "book",
       amount: 180,
     },
     {
       id: 11,
       image: productImg11,
-      heading: "Let’s Read Class 1 Reader and Workbook",
+      heading: "Let’s Read Class 1 Reader",
       description:
         "The Let's Read Class 1 Reader is especially designed to practise long vowel A,E,I,O, U families, complex, tricky phonograms, learn spelling rules, read sentences and long paragraphs fluently. The simple related illustrations help to build comprehension. Our structured approach makes reading stress free and a lot of fun.The workbook is filled with cognitive stimulation activities that stimulate higher order thinking skills and are perfect for proficient readers. They provide the correct amount of challenge to build mastery.",
       icon: productCardIcon3,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/lets-read-class-1-reader/",
+      type: "book",
+      amount: 240,
+    },
+    {
+      id: 29,
+      image: productImg11,
+      heading: "Let’s Read Class 1 Workbook",
+      description:
+        "The Let's Read Class 1 workbook is filled with cognitive stimulation activities that stimulate higher order thinking skills and are perfect for proficient readers. They provide the correct amount of challenge to build mastery.",
+      icon: productCardIcon3,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/lets-read-class-1-workbook/",
       type: "book",
       amount: 240,
     },
@@ -179,7 +227,7 @@ const Products = () => {
         "The Let's Read - Reading Age Diagnostic Tool is a simple to use assessment tool that takes less than a minute to identify the Reading Age of a learner. All instructions of use are given in the manual. It is user friendly and does not require any formal training.",
       icon: productCardIcon3,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/reading-age-diagnostic-tool/",
       type: "book",
       amount: 500,
     },
@@ -192,7 +240,7 @@ const Products = () => {
       icon: productCardIcon4,
       productLink:
         "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "book",
+      type: "game",
       amount: 550,
     },
     {
@@ -204,7 +252,7 @@ const Products = () => {
       icon: productCardIcon4,
       productLink:
         "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "book",
+      type: "game",
       amount: 550,
     },
     {
@@ -216,7 +264,7 @@ const Products = () => {
       icon: productCardIcon4,
       productLink:
         "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "book",
+      type: "game",
       amount: 599,
     },
     {
@@ -228,7 +276,7 @@ const Products = () => {
       icon: productCardIcon4,
       productLink:
         "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "book",
+      type: "game",
       amount: 600,
     },
     {
@@ -240,7 +288,7 @@ const Products = () => {
       icon: productCardIcon4,
       productLink:
         "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "book",
+      type: "game",
       amount: 600,
     },
     {
@@ -252,7 +300,7 @@ const Products = () => {
       icon: productCardIcon4,
       productLink:
         "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "book",
+      type: "game",
       amount: 600,
     },
     {
@@ -264,7 +312,7 @@ const Products = () => {
       icon: productCardIcon4,
       productLink:
         "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "book",
+      type: "game",
       amount: 600,
     },
     {
@@ -276,7 +324,7 @@ const Products = () => {
       icon: productCardIcon4,
       productLink:
         "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "book",
+      type: "game",
       amount: 699,
     },
     {
@@ -288,30 +336,114 @@ const Products = () => {
       icon: productCardIcon4,
       productLink:
         "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
-      type: "book",
+      type: "game",
       amount: 699,
     },
     {
       id: 22,
       image: productImg22,
-      heading: "DOT Books - Level 1 - Set 1, Set 2, Set 3, Set 4, Set 5",
+      heading: "Dot Books Level 1 Set 1 'A' ",
       description:
         "The level 1 DOT Books series help learners to master 3 letter words. Each set consists of a word book, a sight word book, a sentence book and two story books. The set focuses on a particular vowel sound and the entire set has words with the same sound. DOT Books are unique and one of it’s kind !",
       icon: productCardIcon4,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/dot-books-level-1-set-1-a/",
+      type: "book",
+      amount: 599,
+    },
+    {
+      id: 26,
+      image: productImg22,
+      heading: "DOT Books - Level 1 - Set 2 'E' ",
+      description:
+        "The level 1 DOT Books Set 2 'E' help learners to master 3 letter words. Each set consists of a word book, a sight word book, a sentence book and two story books. The set focuses on a particular vowel sound and the entire set has words with the same sound. DOT Books are unique and one of it’s kind !",
+      icon: productCardIcon4,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/dot-books-level-1-set-2-e/",
+      type: "book",
+      amount: 599,
+    },
+    {
+      id: 27,
+      image: productImg22,
+      heading: "DOT Books - Level 1 - Set 3 'I' ",
+      description:
+        "The level 1 DOT Books Set 3 'I' help learners to master 3 letter words. Each set consists of a word book, a sight word book, a sentence book and two story books. The set focuses on a particular vowel sound and the entire set has words with the same sound. DOT Books are unique and one of it’s kind !",
+      icon: productCardIcon4,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/dot-books-level-1-set-3-i/",
+      type: "book",
+      amount: 599,
+    },
+    {
+      id: 28,
+      image: productImg22,
+      heading: "DOT Books - Level 1 - Set 4 'O' ",
+      description:
+        "The level 1 DOT Books Set 4 'O' help learners to master 3 letter words. Each set consists of a word book, a sight word book, a sentence book and two story books. The set focuses on a particular vowel sound and the entire set has words with the same sound. DOT Books are unique and one of it’s kind !",
+      icon: productCardIcon4,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/dot-books-level-1-set-4-o/",
+      type: "book",
+      amount: 599,
+    },
+    {
+      id: 29,
+      image: productImg22,
+      heading: "DOT Books - Level 1 - Set 5 'U' ",
+      description:
+        "The level 1 DOT Books Set 5 'U' help learners to master 3 letter words. Each set consists of a word book, a sight word book, a sentence book and two story books. The set focuses on a particular vowel sound and the entire set has words with the same sound. DOT Books are unique and one of it’s kind !",
+      icon: productCardIcon4,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/dot-books-level-1-set-5-u/",
       type: "book",
       amount: 599,
     },
     {
       id: 23,
       image: productImg23,
-      heading: "DOT Books - Level 2 - Set 1, Set 2, Set 3, Set 4, Set 5",
+      heading: "DOT Books - Level 2 - Set 1 Blend series 1",
       description:
-        "The level 2 DOT Books series help learners to master words with blends, digraphs, double consonants, compound words, magic e words.. Each set consists of a word book, a sight word book, a sentence book and two/three story books. The set focuses on a particular phoneme and the entire set practises the same phoneme. DOT Books are unique and one of its kind ! Experience the joy of watching your child gain confidence and master the art of reading!",
+        "The level 2 DOT Books Set 1 Blend series 1 help learners to master words with blends, digraphs, double consonants, compound words, magic e words.. Each set consists of a word book, a sight word book, a sentence book and two/three story books. The set focuses on a particular phoneme and the entire set practises the same phoneme. DOT Books are unique and one of its kind ! Experience the joy of watching your child gain confidence and master the art of reading!",
       icon: productCardIcon4,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/dot-books-level-2-set-1blend-series-1/",
+      type: "book",
+      amount: 599,
+    },
+    {
+      id: 30,
+      image: productImg23,
+      heading: "DOT Books - Level 2 - Set 2 Blend series 2",
+      description:
+        "The level 2 DOT Books Set 2 Blend series 2 help learners to master words with blends, digraphs, double consonants, compound words, magic e words.. Each set consists of a word book, a sight word book, a sentence book and two/three story books. The set focuses on a particular phoneme and the entire set practises the same phoneme. DOT Books are unique and one of its kind ! Experience the joy of watching your child gain confidence and master the art of reading!",
+      icon: productCardIcon4,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/dot-books-level-2-set-2blend-series-2/",
+      type: "book",
+      amount: 599,
+    },
+    {
+      id: 31,
+      image: productImg23,
+      heading: "DOT Books - Level 2 - Set 3 Diagraph series 1",
+      description:
+        "The level 2 DOT Books Set 3 Diagraph series 1 help learners to master words with blends, digraphs, double consonants, compound words, magic e words.. Each set consists of a word book, a sight word book, a sentence book and two/three story books. The set focuses on a particular phoneme and the entire set practises the same phoneme. DOT Books are unique and one of its kind ! Experience the joy of watching your child gain confidence and master the art of reading!",
+      icon: productCardIcon4,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/dot-books-level-2-set-3-diagraph-series-1/",
+      type: "book",
+      amount: 599,
+    },
+    {
+      id: 32,
+      image: productImg23,
+      heading: "DOT Books - Level 2 - Set 4 Diagraph series 2",
+      description:
+        "The level 2 DOT Books Set 4 Diagraph series 2 help learners to master words with blends, digraphs, double consonants, compound words, magic e words.. Each set consists of a word book, a sight word book, a sentence book and two/three story books. The set focuses on a particular phoneme and the entire set practises the same phoneme. DOT Books are unique and one of its kind ! Experience the joy of watching your child gain confidence and master the art of reading!",
+      icon: productCardIcon4,
+      productLink:
+        "https://letsreadindia.myinstamojo.com/product/dot-books-level-2-set-4-diagraph-series-2/",
       type: "book",
       amount: 599,
     },
@@ -320,10 +452,10 @@ const Products = () => {
       image: productImg24,
       heading: "Where Did They Come From ?",
       description:
-        "A beautifully written book in poetry form; this book explores the wonders of the universe and instills a sense of wonder and joy in the child’s mind. Dive into the magical world of the mysteries of nature and ponder on the echoing chorus of the book… Where did they come from ?",
+        "A beautifully written book in poetry form : This book explores the wonders of the universe and instills a sense of wonder and joy in the child’s mind. Dive into the magical world of the mysteries of nature and ponder on the echoing chorus of the book… Where did they come from ?",
       icon: productCardIcon4,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        " ",
       type: "book",
       amount: 449,
     },
@@ -335,7 +467,7 @@ const Products = () => {
         "This delightful book explores the critters (creatures) of the Western Ghat. It is written as a poetry and is a fascinating journey of a young girl as she observes and explores tiny yet magnificent creatures in the Western ghats.",
       icon: productCardIcon4,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        " ",
       type: "book",
       amount: 449,
     },
@@ -389,28 +521,25 @@ const Products = () => {
       <div className="md:mt-24 md:mb-0 mb-8 w-full flex flex-col items-center justify-center">
         <div className="flex gap-[40px] font-bold w-10/12">
           <div
-            className={`text-3xl cursor-pointer ${
-              activeTab === "all" ? "text-pink underline" : ""
-            }`}
+            className={`text-3xl cursor-pointer ${activeTab === "all" ? "text-pink underline" : ""
+              }`}
             onClick={() => handleFilter("all")}
           >
             All
           </div>
           <div
-            className={`text-3xl cursor-pointer ${
-              activeTab === "book" ? "text-pink underline" : ""
-            }`}
+            className={`text-3xl cursor-pointer ${activeTab === "book" ? "text-pink underline" : ""
+              }`}
             onClick={() => handleFilter("book")}
           >
             Books
           </div>
           <div
-            className={`text-3xl cursor-pointer ${
-              activeTab === "game" ? "text-pink underline" : ""
-            }`}
+            className={`text-3xl cursor-pointer ${activeTab === "game" ? "text-pink underline" : ""
+              }`}
             onClick={() => handleFilter("game")}
           >
-            Game
+            Games
           </div>
         </div>
         <div className="flex md:flex-row flex-wrap flex-col justify-center align-center gap-y-[20px] md:w-10/12 mt-10 relative">
