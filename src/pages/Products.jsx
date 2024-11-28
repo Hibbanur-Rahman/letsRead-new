@@ -59,7 +59,7 @@ const Products = () => {
         "Let's Read kits are fun, engaging hands-on activities and games that support reading at every level. Purchase these exciting activities to make reading stress free.",
       icon: productCardIcon1,
       productLink:
-        " ",
+        "https://letsreadindia.myinstamojo.com/product/level-0-kit/",
       type: "book",
       amount: 8000,
     },
@@ -71,7 +71,7 @@ const Products = () => {
         "Level 0 is for beginners and mostly young children. The carefully planned set of activities help the children to transition from mother tongue to English, recognise letters and associate sounds with symbols. Although this level is for early years, activities like the picture cards can be used as prompts for older children to improve spoken English. The Level 0 manual describes every activity in detail.",
       icon: productCardIcon1,
       productLink:
-        " ",
+        "https://letsreadindia.myinstamojo.com/product/level-0-kit/",
       type: "book",
       amount: 8000,
     },
@@ -83,7 +83,7 @@ const Products = () => {
         "Level 1 is all about learning to read CVC (3 letter) words, sentences and stories. The carefully selected activities help young learners to master fluency in reading and pick up speed. This kit is excellent for building self esteem for your little ones. The Level 1 kit comes with a detailed manual that describes every activity in the kit.",
       icon: productCardIcon1,
       productLink:
-        " ",
+        "https://letsreadindia.myinstamojo.com/product/level-1-kit/",
       type: "book",
       amount: 8000,
     },
@@ -95,7 +95,7 @@ const Products = () => {
         "Level 2 has words with blends, digraphs, double consonants, compound words, and magic-e, sentences and stories. The carefully selected activities help young learners to become proficient in reading and pick up speed. This kit is excellent for building self esteem for your little ones. The Level 2 kit comes with a detailed manual that describes every activity in the kit.",
       icon: productCardIcon1,
       productLink:
-        " ",
+        "https://letsreadindia.myinstamojo.com/product/level-2-kit/",
       type: "book",
       amount: 8000,
     },
@@ -107,7 +107,7 @@ const Products = () => {
         "Level 3 has activities with long vowel A,E,I,O, U families, complex, tricky phonograms and games to learn spelling rules, read sentences and long paragraphs fluently. The carefully selected activities help young  learners to attain mastery in reading age appropriate books. This kit is excellent for building self esteem for children of all age groups. The Level 3 kit comes with a detailed manual that describes every activity in the kit.",
       icon: productCardIcon1,
       productLink:
-        " ",
+        "https://letsreadindia.myinstamojo.com/product/level-3-kit/",
       type: "book",
       amount: 8000,
     },
@@ -455,7 +455,7 @@ const Products = () => {
         "A beautifully written book in poetry form : This book explores the wonders of the universe and instills a sense of wonder and joy in the child’s mind. Dive into the magical world of the mysteries of nature and ponder on the echoing chorus of the book… Where did they come from ?",
       icon: productCardIcon4,
       productLink:
-        " ",
+        "https://letsreadindia.myinstamojo.com/product/where-did-they-come-from/",
       type: "book",
       amount: 449,
     },
@@ -467,7 +467,7 @@ const Products = () => {
         "This delightful book explores the critters (creatures) of the Western Ghat. It is written as a poetry and is a fascinating journey of a young girl as she observes and explores tiny yet magnificent creatures in the Western ghats.",
       icon: productCardIcon4,
       productLink:
-        " ",
+        "https://letsreadindia.myinstamojo.com/product/thulirs-stroll/",
       type: "book",
       amount: 449,
     },
