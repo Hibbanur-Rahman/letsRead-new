@@ -145,7 +145,7 @@ const Products = () => {
       productLink:
         "https://letsreadindia.myinstamojo.com/product/lets-read-nursery-workbook/",
       type: "book",
-      amount: 300,
+      amount: 180,
     },
     {
       id: 9,
@@ -169,7 +169,7 @@ const Products = () => {
       productLink:
         "https://letsreadindia.myinstamojo.com/product/lets-read-jr-kg-workbook/",
       type: "book",
-      amount: 180,
+      amount: 200,
     },
     {
       id: 10,
@@ -193,7 +193,7 @@ const Products = () => {
       productLink:
         "https://letsreadindia.myinstamojo.com/product/lets-read-sr-kg-workbook/",
       type: "book",
-      amount: 180,
+      amount: 200,
     },
     {
       id: 11,
@@ -263,7 +263,7 @@ const Products = () => {
         " Lexicon is an exciting game to learn grammar - parts of speech and build fantastic vocabulary. This simple, multiple player game is suitable for young children and is a perfect birthday present! It can also be considered for prize distribution in schools. Reinforce grammar concepts through fun and play !",
       icon: productCardIcon4,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/lexicon/",
       type: "game",
       amount: 599,
     },
@@ -275,7 +275,7 @@ const Products = () => {
         " Bingo Lingo is an all time favourite of school children. This exciting group game enhances vocabulary, improves spelling rules and word meanings. It is suitable for young children and is a perfect birthday present! It can also be considered for prize distribution in schools. Make learning enjoyable through Bingo Lingo! Every set has got a different spelling rule.",
       icon: productCardIcon4,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/bingo-lingo/",
       type: "game",
       amount: 600,
     },
@@ -287,7 +287,7 @@ const Products = () => {
         "Silent Letters Game is an instant hit. This exciting group game enhances vocabulary and helps learners to reinforce the rules of reading words with silent letters. It is suitable for young children and is a perfect birthday present! It can also be considered for prize distribution in schools. Make spellings enjoyable through the silent letter game.",
       icon: productCardIcon4,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/silent-letters-word-game/",
       type: "game",
       amount: 600,
     },
@@ -299,7 +299,7 @@ const Products = () => {
         "Phoneme cubes are interesting educational blocks that have a combination of sounds written on either side. It is a fun family game or a group game for children. You roll the dice and say words or spellings with that combination. The cubes are excellent to revise/ assess spellings, vocabulary or even word meanings. Educators can make up their own rules and modify them to suit the learner.",
       icon: productCardIcon4,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/phoneme-cubes/",
       type: "game",
       amount: 600,
     },
@@ -311,9 +311,9 @@ const Products = () => {
         "Alphabet blocks are interesting educational cubes that have letters from a-z written on either side. It is an interesting activity for children. The learner can arrange the letters in sequence, or build words, fill in and place missing letters or stack up the blocks to build big words. These blocks enhance eye hand coordination, build fine motor skills and enhance cognitive and critical thinking skills. Educators can make up their own rules and modify instructions to suit the learner and make the activity easier or challenging.",
       icon: productCardIcon4,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/alphabet-blocks/",
       type: "game",
-      amount: 600,
+      amount: 1500,
     },
     {
       id: 20,
@@ -323,7 +323,7 @@ const Products = () => {
         "Tangle Mangle is a fantastic game that requires movements and enhances gross motor skills. The learner has to twist and move his/her body to spell 3 or 4 / 5 letter words! The squeals of laughter and giggles makes this game incomparable! The educator can say words that are challenging or easy according to the level of the child.",
       icon: productCardIcon4,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/tangle-mangle/",
       type: "game",
       amount: 699,
     },
@@ -335,7 +335,7 @@ const Products = () => {
         "Hop Skip Jump is a fantastic game that requires movements and enhances gross motor skills. The learner has to twist and move his/her body to  recognise letters of the alphabet. The squeals of laughter and giggles makes this game incomparable! The educator can say letters and the child has to look for it and step on it. The adult can make the game challenging or easy according to the level of the child.",
       icon: productCardIcon4,
       productLink:
-        "https://letsreadindia.myinstamojo.com/product/snakes-and-ladders/",
+        "https://letsreadindia.myinstamojo.com/product/hop-skip-jump/",
       type: "game",
       amount: 699,
     },
@@ -457,7 +457,7 @@ const Products = () => {
       productLink:
         "https://letsreadindia.myinstamojo.com/product/where-did-they-come-from/",
       type: "book",
-      amount: 449,
+      amount: 499,
     },
     {
       id: 25,
