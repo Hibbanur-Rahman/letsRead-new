@@ -136,7 +136,7 @@ const Products = () => {
       amount: 300,
     },
     {
-      id: 26,
+      id: 10,
       image: productImg8,
       heading: "Let’s Read Nursery Workbook",
       description:
@@ -148,7 +148,7 @@ const Products = () => {
       amount: 300,
     },
     {
-      id: 9,
+      id: 11,
       image: productImg9,
       heading: "Let’s Read Jr. KG Reader",
       description:
@@ -160,7 +160,7 @@ const Products = () => {
       amount: 180,
     },
     {
-      id: 27,
+      id: 12,
       image: productImg9,
       heading: "Let’s Read Jr. KG Workbook",
       description:
@@ -172,7 +172,7 @@ const Products = () => {
       amount: 180,
     },
     {
-      id: 10,
+      id: 13,
       image: productImg10,
       heading: " Let’s Read Sr. KG Reader",
       description:
@@ -184,7 +184,7 @@ const Products = () => {
       amount: 180,
     },
     {
-      id: 28,
+      id: 14,
       image: productImg10,
       heading: " Let’s Read Sr. KG Workbook",
       description:
@@ -196,7 +196,7 @@ const Products = () => {
       amount: 180,
     },
     {
-      id: 11,
+      id: 15,
       image: productImg11,
       heading: "Let’s Read Class 1 Reader",
       description:
@@ -208,7 +208,7 @@ const Products = () => {
       amount: 240,
     },
     {
-      id: 29,
+      id: 16,
       image: productImg11,
       heading: "Let’s Read Class 1 Workbook",
       description:
@@ -220,7 +220,7 @@ const Products = () => {
       amount: 240,
     },
     {
-      id: 12,
+      id: 17,
       image: productImg12,
       heading: "Let’s Read Reading Age Diagnostic Tool (LR_RADT)",
       description:
@@ -232,7 +232,7 @@ const Products = () => {
       amount: 500,
     },
     {
-      id: 13,
+      id: 18,
       image: productImg13,
       heading: "Let’s Read Educational Games",
       description:
@@ -244,7 +244,7 @@ const Products = () => {
       amount: 550,
     },
     {
-      id: 14,
+      id: 19,
       image: productImg14,
       heading: "Snakes and Ladders",
       description:
@@ -256,7 +256,7 @@ const Products = () => {
       amount: 550,
     },
     {
-      id: 15,
+      id: 20,
       image: productImg15,
       heading: "Lexicon",
       description:
@@ -268,7 +268,7 @@ const Products = () => {
       amount: 599,
     },
     {
-      id: 16,
+      id: 21,
       image: productImg16,
       heading: "Bingo Lingo",
       description:
@@ -280,7 +280,7 @@ const Products = () => {
       amount: 600,
     },
     {
-      id: 17,
+      id: 22,
       image: productImg17,
       heading: "Silent Letters Word Game",
       description:
@@ -292,7 +292,7 @@ const Products = () => {
       amount: 600,
     },
     {
-      id: 18,
+      id: 23,
       image: productImg18,
       heading: "Phoneme Cubes",
       description:
@@ -304,7 +304,7 @@ const Products = () => {
       amount: 600,
     },
     {
-      id: 19,
+      id: 24,
       image: productImg2,
       heading: "Alphabet Blocks",
       description:
@@ -316,7 +316,7 @@ const Products = () => {
       amount: 600,
     },
     {
-      id: 20,
+      id: 25,
       image: productImg20,
       heading: "Tangle Mangle",
       description:
@@ -328,7 +328,7 @@ const Products = () => {
       amount: 699,
     },
     {
-      id: 21,
+      id: 26,
       image: productImg21,
       heading: "Hop Skip Jump",
       description:
@@ -340,7 +340,7 @@ const Products = () => {
       amount: 699,
     },
     {
-      id: 22,
+      id: 27,
       image: productImg22,
       heading: "Dot Books Level 1 Set 1 'A' ",
       description:
@@ -352,7 +352,7 @@ const Products = () => {
       amount: 599,
     },
     {
-      id: 26,
+      id: 28,
       image: productImg22,
       heading: "DOT Books - Level 1 - Set 2 'E' ",
       description:
@@ -364,7 +364,7 @@ const Products = () => {
       amount: 599,
     },
     {
-      id: 27,
+      id: 29,
       image: productImg22,
       heading: "DOT Books - Level 1 - Set 3 'I' ",
       description:
@@ -376,7 +376,7 @@ const Products = () => {
       amount: 599,
     },
     {
-      id: 28,
+      id: 30,
       image: productImg22,
       heading: "DOT Books - Level 1 - Set 4 'O' ",
       description:
@@ -388,7 +388,7 @@ const Products = () => {
       amount: 599,
     },
     {
-      id: 29,
+      id: 31,
       image: productImg22,
       heading: "DOT Books - Level 1 - Set 5 'U' ",
       description:
@@ -400,7 +400,7 @@ const Products = () => {
       amount: 599,
     },
     {
-      id: 23,
+      id: 32,
       image: productImg23,
       heading: "DOT Books - Level 2 - Set 1 Blend series 1",
       description:
@@ -412,7 +412,7 @@ const Products = () => {
       amount: 599,
     },
     {
-      id: 30,
+      id: 33,
       image: productImg23,
       heading: "DOT Books - Level 2 - Set 2 Blend series 2",
       description:
@@ -424,7 +424,7 @@ const Products = () => {
       amount: 599,
     },
     {
-      id: 31,
+      id: 34,
       image: productImg23,
       heading: "DOT Books - Level 2 - Set 3 Diagraph series 1",
       description:
@@ -436,7 +436,7 @@ const Products = () => {
       amount: 599,
     },
     {
-      id: 32,
+      id: 35,
       image: productImg23,
       heading: "DOT Books - Level 2 - Set 4 Diagraph series 2",
       description:
@@ -448,7 +448,7 @@ const Products = () => {
       amount: 599,
     },
     {
-      id: 24,
+      id: 36,
       image: productImg24,
       heading: "Where Did They Come From ?",
       description:
@@ -460,7 +460,7 @@ const Products = () => {
       amount: 449,
     },
     {
-      id: 25,
+      id: 37,
       image: productImg25,
       heading: "Thulir’s Stroll",
       description:
