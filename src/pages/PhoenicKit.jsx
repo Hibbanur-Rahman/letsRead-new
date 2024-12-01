@@ -480,7 +480,11 @@ const PhoenicKit = () => {
               "Contents",
               "Gallery",
             ].map((tab, index) => (
-              <div className="flex flex-col">
+              <div
+                className={`md:flex flex-col ${
+                  activeTab === index + 1 ? "flex" : "hidden"
+                }`}
+              >
                 <p
                   key={index}
                   className={`text-xl font-bold cursor-pointer ${
@@ -498,40 +502,17 @@ const PhoenicKit = () => {
           </div>
           <div className="w-full rounded-3xl rounded-t-none border-[1px] border-[gray] bg-[#FAE5FF] shadow-xl relative">
             <FaArrowCircleRight
-              className="absolute text-5xl text-darkPurple top-[50%] right-[-30px] cursor-pointer hover:scale-105 transition-all duration-300 hover:text-deep-purple-600"
+              className="absolute text-5xl z-[10] md:text-darkPurple text-[#2d0138ae] top-[50%] md:right-[-30px] right-[0px] cursor-pointer hover:scale-105 transition-all duration-300 hover:text-deep-purple-600"
               onClick={() => handleNext()}
             />
             <FaArrowCircleLeft
-              className="absolute text-5xl text-darkPurple top-[50%]  left-[-30px] cursor-pointer hover:scale-105 transition-all duration-300 hover:text-deep-purple-600"
+              className="absolute text-5xl z-[10] md:text-darkPurple text-[#2d0138ae] top-[50%]  md:left-[-30px] left-[0px] cursor-pointer hover:scale-105 transition-all duration-300 hover:text-deep-purple-600"
               onClick={() => handlePrev()}
             />
 
             {renderContent()}
           </div>
         </div>
-      </div>
-      <div className="md:hidden flex w-full justify-between gap-[10px] px-3 mb-8">
-        {count > 1 ? (
-          <button
-            className="w-6/12 bg-darkPurple text-white rounded-lg py-1"
-            onClick={() => handlePrev(count)}
-          >
-            Prev
-          </button>
-        ) : (
-          ""
-        )}
-
-        {count <= 5 ? (
-          <button
-            className="w-6/12 bg-darkPurple text-white rounded-lg py-1"
-            onClick={() => handleNext(count)}
-          >
-            Next
-          </button>
-        ) : (
-          ""
-        )}
       </div>
     </div>
   );
