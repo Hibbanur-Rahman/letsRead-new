@@ -59,7 +59,7 @@ const HeroSection = () => {
     dispatch(openEnquireModal(true));
   };
   return (
-    <div className="w-full flex justify-center items-center flex-col relative md:mt-0 mt-[60px]">
+    <div className="w-full flex justify-center items-center flex-col relative md:mt-0 ">
       <img src={HeroPng} alt="img" className="w-full md:flex hidden" />
       <img src={HeroImgMobile} alt="img" className="w-full md:hidden" />
 

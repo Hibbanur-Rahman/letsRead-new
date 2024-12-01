@@ -14,7 +14,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center md:mt-0 mt-[20px]">
+    <div className="w-full flex flex-col items-center md:mt-0 ">
       <div className="w-full flex items-center justify-center flex-col relative">
         <img
           src={aboutBannerImg}

@@ -140,42 +140,42 @@ const Footer = () => {
         </div>
 
         <div className="md:w-2/12 md:flex flex-col ">
-          <h1 className="text-3xl font-bold">Company</h1>
-          <div className="w-[100px] h-[3px] rounded-lg mt-1 bg-yellow"></div>
+          <h1 className="md:text-3xl text-lg font-bold">Company</h1>
+          <div className="md:w-[100px] w-[50px] h-[3px] rounded-lg mt-1 bg-yellow"></div>
 
-          <ul className="list-disc mt-16 px-4 ">
+          <ul className="list-disc md:mt-16 mt-4 px-4 ">
             <li
-              className="text-lg my-2 cursor-pointer"
+              className="md:text-lg text-sm my-2 cursor-pointer"
               onClick={() => navigate("/about")}
             >
               About Us{" "}
             </li>
             <li
-              className="text-lg my-2 cursor-pointer"
+              className="md:text-lg text-sm my-2 cursor-pointer"
               onClick={() => navigate("/products")}
             >
               Products{" "}
             </li>
             <li
-              className="text-lg my-2 cursor-pointer"
+              className="md:text-lg text-sm my-2 cursor-pointer"
               onClick={() => navigate("/programs")}
             >
               Programs{" "}
             </li>
             <li
-              className="text-lg my-2 cursor-pointer"
+              className="md:text-lg text-sm my-2 cursor-pointer"
               onClick={() => navigate("/resources")}
             >
               Resources{" "}
             </li>
             <li
-              className="text-lg my-2 cursor-pointer"
+              className="md:text-lg text-sm my-2 cursor-pointer"
               onClick={() => navigate("/contact")}
             >
               Contact Us{" "}
             </li>
             <li
-              className="text-lg my-2 cursor-pointer"
+              className="md:text-lg text-sm my-2 cursor-pointer"
               onClick={() => navigate("/blogs")}
             >
               Blogs{" "}
