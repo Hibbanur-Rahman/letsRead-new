@@ -36,7 +36,7 @@ const HeroSection = () => {
       formData.append("state", state);
       formData.append("childName", childName);
       const response = await axios.post(
-        "https://script.google.com/macros/s/AKfycbxvCGx2EbmivAJ5Wg7uUYDgVSz3OOyRwmFBZezcX_2jrKtluX9ZiJrYqNQcflFl2eKi0Q/exec",
+        "https://script.google.com/macros/s/AKfycbwiSCz5wYEpeXjc7aAGkKvAPNJ6RUfvrec2cAZtoNDkHtmojmwJmxYvEA30xXmTwVYY/exec",
         formData
       );
       if (response.status === 200) {
@@ -117,6 +117,7 @@ const HeroSection = () => {
               onChange={(e) => setFullName(e.target.value)}
               type="text"
               placeholder="Enter your name"
+
               className="md:w-8/12 w-full py-2 px-4 rounded-xl border-[1px] border-[#AEAEAE] text-black "
             />
             <input
