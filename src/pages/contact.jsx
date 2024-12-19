@@ -1,3 +1,7 @@
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
 import Banner from "../assets/images/contact-banner-img.jpg";
 import greenStar from "../assets/images/green-4-star.svg";
 import yellowStar from "../assets/images/yellow-4-star.svg";
@@ -15,12 +19,52 @@ import categoryIcon from "../assets/images/category-icon.svg";
 import stateIcon from "../assets/images/state-icon.svg";
 import messageIcon from "../assets/images/message-icon.svg";
 import contactUsImgBgMobile from "../assets/images/contact-us-mobile-img.png";
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
+import { openEnquireModal } from "../redux/enquireModalSlice";
+import toast from "react-hot-toast";
+import axios from "axios";
 const Contact = () => {
   const navigate = useNavigate();
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [state, setState] = useState("");
+  const [childName, setChildName] = useState(" ");
+  const [loading, setLoading] = useState(false);
 
+  // handle the enquiry message
+  const handleEnquiryMessage = async (e) => {
+    setLoading(true);
+    e.preventDefault();
+    try {
+      const formData = new FormData();
+      formData.append("fullName", fullName);
+      formData.append("email", email);
+      formData.append("phone", phone);
+      formData.append("message", message);
+      formData.append("state", state);
+      formData.append("childName", childName);
+      const response = await axios.post(
+        "https://script.google.com/macros/s/AKfycbwiSCz5wYEpeXjc7aAGkKvAPNJ6RUfvrec2cAZtoNDkHtmojmwJmxYvEA30xXmTwVYY/exec",
+        formData
+      );
+      if (response.status === 200) {
+        setLoading(false);
+        toast.success("Your message has been sent successfully");
+        setChildName("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+        setState("");
+        setFullName("");
+      }
+    } catch (error) {
+      setLoading(false);
+      console.log("error in sending enquiry:", error);
+      toast.error(error?.response?.message?.data || "Failed to Send Message");
+    }
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -152,6 +196,8 @@ const Contact = () => {
                   name="username"
                   className="bg-transparent outline-none w-full text-lg text-white placeholder:text-[#DEDEDE]"
                   placeholder="Name"
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
                 />
               </div>
               <div className="input-group shadow-xl relative flex items-center border-[1px] border-[#fff] rounded-xl p-2 gap-[20px] my-4">
@@ -161,6 +207,8 @@ const Contact = () => {
                   name="email"
                   className="bg-transparent outline-none w-full text-lg text-white placeholder:text-[#DEDEDE]"
                   placeholder="Email Address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="input-group shadow-xl relative flex items-center border-[1px] border-[#fff] rounded-xl p-2 gap-[20px] my-4">
@@ -174,6 +222,8 @@ const Contact = () => {
                   name="phone"
                   className="bg-transparent outline-none w-full text-lg text-white placeholder:text-[#DEDEDE]"
                   placeholder="Phone Number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
               {/* <div className="input-group shadow-xl relative flex items-center border-[1px] border-[#fff] rounded-xl p-2 gap-[20px] my-4">
@@ -192,26 +242,45 @@ const Contact = () => {
                   name="state"
                   className="bg-transparent outline-none w-full text-lg text-white placeholder:text-[#DEDEDE]"
                   placeholder="State"
+                  value={state}
+                  onChange={(e) => setState(e.target.value)}
                 />
               </div>
               <div className="input-group shadow-xl relative flex border-[1px] border-[#fff] rounded-xl p-2 gap-[20px] my-4 h-[200px]">
                 <img src={messageIcon} alt="" className="w-[30px] h-[30px] " />
                 <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   type="text"
                   name="message"
                   className="  bg-transparent outline-none w-full text-lg text-white placeholder:text-[#DEDEDE] resize-none"
                   placeholder="Message"
                 />
               </div>
-              <button
-                className=" px-8 py-1 mr-10 rounded-xl font-bold text-2xl w-full mt-8"
-                style={{
-                  background:
-                    "linear-gradient(60deg, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%)",
-                }}
-              >
-                Send Message
-              </button>
+              {loading ? (
+                <button
+                  className=" px-8 py-1 mr-10 rounded-xl font-bold text-2xl w-full mt-8 cursor-not-allowed"
+                  disabled={true}
+                  style={{
+                    background:
+                      "linear-gradient(60deg, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%)",
+                  }}
+                  
+                >
+                  Sending ...
+                </button>
+              ) : (
+                <button
+                  className=" px-8 py-1 mr-10 rounded-xl font-bold text-2xl w-full mt-8"
+                  style={{
+                    background:
+                      "linear-gradient(60deg, rgba(255,226,89,1) 0%, rgba(255,167,81,1) 100%)",
+                  }}
+                  onClick={(e) => handleEnquiryMessage(e)}
+                >
+                  Send Message
+                </button>
+              )}
             </form>
           </div>
           <div className="md:w-3/12 flex h-full relative">

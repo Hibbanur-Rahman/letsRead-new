@@ -48,6 +48,7 @@ const HeroSection = () => {
         setMessage("");
         setState("");
         setFullName("");
+        dispatch(openEnquireModal(false))
       }
     } catch (error) {
       setLoading(false);
